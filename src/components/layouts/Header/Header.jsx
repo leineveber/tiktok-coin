@@ -1,29 +1,20 @@
 import { Col, Row } from 'antd';
-import React, { useEffect, useState } from 'react';
-import { getUser } from 'api/getUser.api';
-import { getOnline } from 'api/getOnline.api';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import * as S from './Header.styles';
 
 export const Header = () => {
-  const [user, setUser] = useState(null);
-  const [onlineUsers, setOnlineUsers] = useState(0);
-
-  useEffect(() => {
-    getUser().then((res) => setUser(res));
-  }, []);
-
-  useEffect(() => {
-    getOnline().then((res) => setOnlineUsers(res));
-  }, []);
+  const onlineUsers = useSelector((state) => state.onlineUsers?.value);
+  const username = useSelector((state) => state.auth?.user);
 
   return (
     <Row justify="space-between">
       <Col>
-        <S.UsernameText>{user?.username ? user.username : 'Юзернейм ТГ'}</S.UsernameText>
+        <S.UsernameText>{username || 'Юзернейм ТГ'}</S.UsernameText>
       </Col>
 
       <Col>
-        <S.OnlineText>Онлайн: {onlineUsers}</S.OnlineText>
+        <S.OnlineText>Онлайн: {onlineUsers || 'Загрузка...'}</S.OnlineText>
       </Col>
     </Row>
   );
