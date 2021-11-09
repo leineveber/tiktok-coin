@@ -8,7 +8,7 @@ const colors = {
   },
   text: {
     main: '#ffffff',
-    secondary: '',
+    secondary: '#9ea2ae',
   },
 };
 
