@@ -1,14 +1,28 @@
+const standardColors = {
+  blue: '#5b6dff',
+  blueLight: '#a3a8ff',
+  blueNavy: '#456efd',
+  white: '#ffffff',
+  green: 'green',
+  greenLight: '#1dcd9d',
+  red: 'red',
+  redLight: '#ff6850',
+  orange: 'orange',
+  orangeLight: '#fbaf2a',
+};
+
 const colors = {
   main: {
-    primary: '#5b6dff',
-    info: '#456efd',
-    success: '#1dcd9d',
-    error: '#ff6850',
-    warning: '#fbaf2a',
+    primary: standardColors.blue,
+    secondary: standardColors.blueLight,
+    info: standardColors.blueNavy,
+    success: standardColors.green,
+    error: standardColors.red,
+    warning: standardColors.orange,
   },
   text: {
-    main: '#ffffff',
-    secondary: '#9ea2ae',
+    main: standardColors.white,
+    secondary: standardColors.blueLight,
   },
 };
 
