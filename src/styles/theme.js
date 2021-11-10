@@ -3,12 +3,14 @@ const standardColors = {
   blueLight: '#a3a8ff',
   blueNavy: '#456efd',
   white: '#ffffff',
-  green: 'green',
+  green: '#00ff00',
   greenLight: '#1dcd9d',
-  red: 'red',
+  red: '#ff0000',
   redLight: '#ff6850',
   orange: 'orange',
   orangeLight: '#fbaf2a',
+  gray: '#d8d8d8',
+  grayDark: '#9ea2ae',
 };
 
 const colors = {
@@ -23,7 +25,9 @@ const colors = {
   text: {
     main: standardColors.white,
     secondary: standardColors.blueLight,
+    additional: standardColors.grayDark,
   },
+  border: standardColors.gray,
 };
 
 const border = {
@@ -44,4 +48,4 @@ const media = {
   xl: getBreakpointPx(breakpoints.xl),
 };
 
-export const theme = { breakpoints, media, colors, border };
+export const theme = { breakpoints, media, colors, border, shadow: '0 0 10px rgba(0, 0, 0, 0.5)' };
