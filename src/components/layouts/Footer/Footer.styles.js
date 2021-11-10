@@ -27,7 +27,7 @@ export const Btn = styled(Button)`
     props.type === 'primary'
       ? css`
           transform: translateY(-5px);
-          box-shadow: ${props.theme.shadow};
+          box-shadow: ${props.theme.shadow.button};
         `
       : css`
           border: 0;
