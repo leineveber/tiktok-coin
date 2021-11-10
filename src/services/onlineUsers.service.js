@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { onlineUsers } from 'constants/instance';
+import { onlineUsers } from 'constants/config/instance';
 
 export const getOnlineUsers = createAsyncThunk('onlineUsers/fetchAll', async (_, thunkApi) => {
   try {
