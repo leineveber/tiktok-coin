@@ -29,5 +29,6 @@ module.exports = {
     'no-param-reassign': 0,
     'operator-linebreak': 0,
     'no-confusing-arrow': 0,
+    'max-len': 0,
   },
 };
