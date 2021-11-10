@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { MainPage } from 'pages/MainPage';
 import { MorePage } from 'pages/MorePage';
 import { ReferalsPage } from 'pages/ReferalsPage';
@@ -8,22 +10,22 @@ import { routesPaths } from './routesPaths';
 export const routes = [
   {
     path: routesPaths.MAIN_PAGE,
-    component: MainPage,
+    element: <MainPage />,
   },
   {
     path: routesPaths.TOP_PAGE,
-    component: TopPage,
+    element: <TopPage />,
   },
   {
     path: routesPaths.SHOP_PAGE,
-    component: ShopPage,
+    element: <ShopPage />,
   },
   {
     path: routesPaths.REFERALS_PAGE,
-    component: ReferalsPage,
+    element: <ReferalsPage />,
   },
   {
     path: routesPaths.MORE_PAGE,
-    component: MorePage,
+    element: <MorePage />,
   },
 ];

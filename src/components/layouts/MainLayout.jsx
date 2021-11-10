@@ -1,17 +1,16 @@
 import React from 'react';
-import { Layout } from 'antd';
 import { Header } from './Header/Header';
 import * as S from './MainLayout.styles';
 import { Footer } from './Footer/Footer';
 
 export const MainLayout = ({ children }) => (
-  <Layout>
-    <Layout.Header>
+  <S.MainLayout>
+    <S.MainHeader>
       <Header />
-    </Layout.Header>
-    <Layout.Content>{children}test</Layout.Content>
+    </S.MainHeader>
+    <S.MainContent>{children}test</S.MainContent>
     <S.MainFooter>
       <Footer />
     </S.MainFooter>
-  </Layout>
+  </S.MainLayout>
 );

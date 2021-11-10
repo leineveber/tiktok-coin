@@ -21,6 +21,7 @@ const colors = {
     success: standardColors.green,
     error: standardColors.red,
     warning: standardColors.orange,
+    background: standardColors.white,
   },
   text: {
     main: standardColors.white,
@@ -31,7 +32,8 @@ const colors = {
 };
 
 const border = {
-  radius: '6px',
+  small: '6px',
+  large: '30px',
 };
 
 const breakpoints = {
