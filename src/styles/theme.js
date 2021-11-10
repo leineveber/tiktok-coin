@@ -42,6 +42,11 @@ const breakpoints = {
   xl: 1280,
 };
 
+const shadow = {
+  button: '0 0 5px rgba(0, 0, 0, 0.5)',
+  card: '0px 4px 40px rgba(0, 0, 0, 0.07)',
+};
+
 const getBreakpointPx = (breakpoint) => `(min-width: ${breakpoint}px)`;
 
 const media = {
@@ -50,4 +55,4 @@ const media = {
   xl: getBreakpointPx(breakpoints.xl),
 };
 
-export const theme = { breakpoints, media, colors, border, shadow: '0 0 5px rgba(0, 0, 0, 0.5)' };
+export const theme = { breakpoints, media, standardColors, colors, border, shadow };
