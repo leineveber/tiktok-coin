@@ -48,4 +48,4 @@ const media = {
   xl: getBreakpointPx(breakpoints.xl),
 };
 
-export const theme = { breakpoints, media, colors, border, shadow: '0 0 10px rgba(0, 0, 0, 0.5)' };
+export const theme = { breakpoints, media, colors, border, shadow: '0 0 5px rgba(0, 0, 0, 0.5)' };
