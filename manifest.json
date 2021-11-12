@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TikTokCoin",
+  "name": "TikTokCoin",
+  "description": "Зарабатывай просто!",
   "icons": [
     {
       "src": "favicon.ico",
