@@ -32,5 +32,9 @@ export const MainContent = styled(Layout.Content)`
 `;
 
 export const MainFooter = styled(Layout.Footer)`
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
   border-top: 1px solid ${(props) => props.theme.colors.border};
 `;

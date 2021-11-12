@@ -35,15 +35,15 @@ export const ProfileHeader = () => {
 
       <Col span={24}>
         <Row justify="space-between">
-          <Col span={4}>
+          <Col span={5}>
             <Withdraw />
           </Col>
 
-          <Col span={4}>
+          <Col span={5}>
             <Shop />
           </Col>
 
-          <Col span={4}>
+          <Col span={5}>
             <Friends />
           </Col>
         </Row>
