@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { MainLayout } from 'components/layouts/MainLayout';
 import { store } from 'store/store';
@@ -13,7 +13,7 @@ export const App = () => (
     <Provider store={store}>
       <GlobalStyles />
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
+        <HashRouter>
           <MainLayout>
             <Routes>
               {routes.map((route) => (
@@ -21,7 +21,7 @@ export const App = () => (
               ))}
             </Routes>
           </MainLayout>
-        </BrowserRouter>
+        </HashRouter>
       </ThemeProvider>
     </Provider>
   </>

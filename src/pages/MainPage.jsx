@@ -1,27 +1,37 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from 'styled-components';
+import React from 'react';
 import { Col, Row } from 'antd';
-import { Card } from 'components/common/Card/Card';
-import { BaseCard } from 'components/profile/BaseCard/BaseCard';
-import { baseCards } from 'constants/data/profile';
+import { BonusCard } from 'components/profile/cards/BonusCard/BonusCard';
+import { VoucherCard } from 'components/profile/cards/VoucherCard/VoucherCard';
+import { InstallCard } from 'components/profile/cards/InstallCard/InstallCard';
+import { HelpCard } from 'components/profile/cards/HelpCard/HelpCard';
+import { WatchCard } from 'components/profile/cards/WatchCard/WatchCard';
 
-export const MainPage = () => {
-  const theme = useContext(ThemeContext);
+export const MainPage = () => (
+  <>
+    <Row gutter={[0, 20]}>
+      <Col span={24}>
+        <WatchCard />
+      </Col>
 
-  const baseCardsCols = baseCards.map((card) => (
-    <Col span={12}>
-      <BaseCard title={card.title} icon={card.icon} background={theme.standardColors[card.background]} />
-    </Col>
-  ));
+      <Col span={24}>
+        <Row gutter={[10, 10]}>
+          <Col span={12}>
+            <BonusCard />
+          </Col>
 
-  return (
-    <>
-      <Row gutter={[20, 10]}>
-        <Col span={24}>
-          <Card>test</Card>
-        </Col>
-        {baseCardsCols}
-      </Row>
-    </>
-  );
-};
+          <Col span={12}>
+            <VoucherCard />
+          </Col>
+
+          <Col span={12}>
+            <InstallCard />
+          </Col>
+
+          <Col span={12}>
+            <HelpCard />
+          </Col>
+        </Row>
+      </Col>
+    </Row>
+  </>
+);
