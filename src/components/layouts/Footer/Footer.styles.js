@@ -4,29 +4,37 @@ import styled, { css } from 'styled-components';
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
-  column-gap: 0.15rem;
+  column-gap: 0.5rem;
 `;
 
 export const Btn = styled(Button)`
   height: unset;
   line-height: 1.3;
-  padding: 0;
-  flex-shrink: 0;
-  width: 18%;
-  font-size: 0.65rem;
+  padding: 2px;
+  width: 20%;
+  max-width: 6rem;
 
-  & span[role='img'] {
-    font-size: 1.25rem;
-  }
+  font-size: ${(props) => props.theme.typography.size.xs};
 
   @media only screen and ${(props) => props.theme.media.md} {
-    font-size: 0.875rem;
+    line-height: 1.5;
+
+    font-size: ${(props) => props.theme.typography.size.md};
+  }
+
+  & span[role='img'] {
+    font-size: ${(props) => props.theme.typography.size.xxl};
+
+    @media only screen and ${(props) => props.theme.media.md} {
+      font-size: ${(props) => props.theme.typography.size.xxxl};
+    }
   }
 
   ${(props) =>
     props.type === 'primary'
       ? css`
-          transform: translateY(-5px);
+          transform: translateY(-10px);
+
           box-shadow: ${props.theme.shadow.button};
         `
       : css`

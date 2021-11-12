@@ -1,4 +1,8 @@
 import React from 'react';
 import * as S from './Button.styles';
 
-export const Button = ({ children, ...props }) => <S.Btn {...props}>{children}</S.Btn>;
+export const Button = ({ className, secondary, payment, children, ...props }) => (
+  <S.Btn className={className} isSecondary={secondary} isPayment={payment} {...props}>
+    {children}
+  </S.Btn>
+);

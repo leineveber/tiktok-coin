@@ -2,7 +2,9 @@ import styled, { css } from 'styled-components';
 import { Button } from 'antd';
 import { hexToRGB } from 'utils/utils';
 
-export const Btn = styled(Button)`
+export const Btn = styled(Button).withConfig({
+  shouldForwardProp: (prop) => !['isPayment', 'isSecondary'].includes(prop),
+})`
   ${(props) =>
     props.type === 'text' &&
     css`
@@ -21,5 +23,45 @@ export const Btn = styled(Button)`
         ${props.theme.colors.main.primary},
         ${hexToRGB(props.theme.colors.main.primary, 0.9)}
       );
+    `};
+
+  ${(props) =>
+    props.isPayment &&
+    css`
+      background: ${props.theme.colors.main.success};
+
+      border-color: ${props.theme.colors.main.success};
+
+      &:hover {
+        background: ${hexToRGB(props.theme.colors.main.success, 0.8)};
+
+        border-color: ${hexToRGB(props.theme.colors.main.success, 0.8)};
+      }
+
+      &:active {
+        background: ${hexToRGB(props.theme.colors.main.success, 0.7)};
+
+        border-color: ${hexToRGB(props.theme.colors.main.success, 0.7)};
+      }
+
+      &:focus {
+        background: ${props.theme.colors.main.success};
+
+        border-color: ${props.theme.colors.main.success};
+      }
+    `};
+
+  ${(props) =>
+    props.isSecondary &&
+    css`
+      background: ${props.theme.colors.main.secondary};
+
+      border-color: ${props.theme.colors.main.secondary};
+
+      &:active {
+        background: ${hexToRGB(props.theme.colors.main.secondary, 0.7)};
+
+        border-color: ${hexToRGB(props.theme.colors.main.secondary, 0.7)};
+      }
     `};
 `;

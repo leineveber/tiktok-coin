@@ -30,5 +30,7 @@ module.exports = {
     'operator-linebreak': 0,
     'no-confusing-arrow': 0,
     'max-len': 0,
+    'no-unused-expressions': 0,
+    indent: 0,
   },
 };

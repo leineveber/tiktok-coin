@@ -1,9 +1,10 @@
 const standardColors = {
+  black: '#000000',
   blue: '#5b6dff',
   blueLight: '#a3a8ff',
   blueNavy: '#456efd',
   white: '#ffffff',
-  green: '#00ff00',
+  green: '#4bb34b',
   greenLight: '#1dcd9d',
   red: '#ff0000',
   redLight: '#ff6850',
@@ -11,11 +12,13 @@ const standardColors = {
   orangeLight: '#fbaf2a',
   gray: '#d8d8d8',
   grayDark: '#9ea2ae',
+  purple: '#d8b1d4', // TODO change
 };
 
 const colors = {
   main: {
     primary: standardColors.blue,
+    primaryDark: standardColors.purple,
     secondary: standardColors.blueLight,
     info: standardColors.blueNavy,
     success: standardColors.green,
@@ -27,12 +30,36 @@ const colors = {
     main: standardColors.white,
     secondary: standardColors.blueLight,
     additional: standardColors.grayDark,
+    contrast: standardColors.black,
   },
   border: standardColors.gray,
 };
 
+const typography = {
+  size: {
+    xs: '0.725rem',
+    md: '0.875rem',
+    lg: '1rem',
+    xl: '1.25rem',
+    xxl: '1.5rem',
+    xxxl: '1.75rem',
+  },
+  weight: {
+    thin: 100,
+    ultraLight: 200,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    semiBold: 600,
+    bold: 700,
+    ultraBold: 800,
+    heavy: 900,
+  },
+};
+
 const border = {
   small: '6px',
+  medium: '15px',
   large: '30px',
 };
 
@@ -55,4 +82,4 @@ const media = {
   xl: getBreakpointPx(breakpoints.xl),
 };
 
-export const theme = { breakpoints, media, standardColors, colors, border, shadow };
+export const theme = { breakpoints, media, standardColors, colors, typography, border, shadow };
