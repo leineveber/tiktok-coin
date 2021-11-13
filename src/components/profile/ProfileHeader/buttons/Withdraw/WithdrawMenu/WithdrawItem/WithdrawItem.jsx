@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
-import { Form, Select } from 'antd';
+import { Form, Select as AntSelect } from 'antd';
+import { Select } from 'components/common/Select/Select';
 import { withdrawWays } from 'constants/config/withdraw';
 import { requiredRule } from 'constants/config/requiredRule';
 
@@ -7,9 +8,9 @@ export const WithdrawItem = () => {
   const withdrawItems = useMemo(
     () =>
       withdrawWays.map((way) => (
-        <Select.Option key={way.value} value={way.value}>
+        <AntSelect.Option key={way.value} value={way.value}>
           {way.name}
-        </Select.Option>
+        </AntSelect.Option>
       )),
     [],
   );
