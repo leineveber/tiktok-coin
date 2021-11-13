@@ -14,7 +14,7 @@ export const MainCard = ({
   children,
 }) => (
   <S.MainCard background={background} isPrimary={isPrimary} onClick={onClick}>
-    <Row justify="space-between" align="middle" gutter={[0, 10]}>
+    <Row justify="space-between" align="middle" gutter={[0, 0]}>
       <Col span={24}>
         <S.Title>{title}</S.Title>
       </Col>

@@ -51,6 +51,7 @@ export const MainCard = styled(Card).withConfig({
 
 export const Title = styled(Typography.Text)`
   font-weight: 600;
+  line-height: 1.2;
 
   color: ${(props) => props.theme.colors.text.main};
 
@@ -63,6 +64,7 @@ export const Title = styled(Typography.Text)`
 
 export const Description = styled(Typography.Text)`
   opacity: 0.5;
+  line-height: 2;
 
   color: ${(props) => props.theme.colors.text.main};
 

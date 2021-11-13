@@ -23,6 +23,14 @@ export const Btn = styled(Button).withConfig({
         ${props.theme.colors.main.primary},
         ${hexToRGB(props.theme.colors.main.primary, 0.9)}
       );
+
+      &:focus {
+        background: linear-gradient(
+          to right top,
+          ${props.theme.colors.main.primary},
+          ${hexToRGB(props.theme.colors.main.primary, 0.9)}
+        );
+      }
     `};
 
   ${(props) =>
@@ -39,9 +47,9 @@ export const Btn = styled(Button).withConfig({
       }
 
       &:active {
-        background: ${hexToRGB(props.theme.colors.main.success, 0.7)};
+        background: ${props.theme.colors.main.success};
 
-        border-color: ${hexToRGB(props.theme.colors.main.success, 0.7)};
+        border-color: ${props.theme.colors.main.success};
       }
 
       &:focus {
@@ -62,6 +70,12 @@ export const Btn = styled(Button).withConfig({
         background: ${hexToRGB(props.theme.colors.main.secondary, 0.7)};
 
         border-color: ${hexToRGB(props.theme.colors.main.secondary, 0.7)};
+      }
+
+      &:focus {
+        background: ${props.theme.colors.main.secondary};
+
+        border-color: ${props.theme.colors.main.secondary};
       }
     `};
 `;
