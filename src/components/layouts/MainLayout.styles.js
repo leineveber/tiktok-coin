@@ -2,9 +2,11 @@ import styled from 'styled-components';
 import { Layout } from 'antd';
 
 export const MainLayout = styled(Layout)`
-  height: 100vh;
-
   background-color: ${(props) => props.theme.colors.main.primary};
+
+  @media only screen and (min-height: 600px) {
+    height: 100vh;
+  }
 `;
 
 export const MainHeader = styled(Layout.Header)`
@@ -18,7 +20,7 @@ export const MainHeader = styled(Layout.Header)`
 
 export const MainContent = styled(Layout.Content)`
   padding: 1.5rem 1rem;
-  overflow-y: auto; // TODO add padding and style scroll
+  margin-bottom: 71px;
 
   border-top-left-radius: ${(props) => props.theme.border.large};
 
@@ -28,6 +30,10 @@ export const MainContent = styled(Layout.Content)`
 
   @media only screen and ${(props) => props.theme.media.md} {
     padding: 1.5rem;
+  }
+
+  @media only screen and (min-height: 600px) {
+    overflow-y: auto; // TODO add padding and style scroll
   }
 `;
 
