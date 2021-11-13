@@ -9,3 +9,8 @@ export const Drawer = styled(AntDrawer)`
     border-radius: ${(props) => `${props.theme.border.large} ${props.theme.border.large} 0  0 `};
   }
 `;
+
+export const SwipeWrapper = styled.div`
+  margin: -24px;
+  padding: 24px;
+`;

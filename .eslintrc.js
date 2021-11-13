@@ -32,5 +32,7 @@ module.exports = {
     'max-len': 0,
     'no-unused-expressions': 0,
     indent: 0,
+    'arrow-body-style': 0,
+    'no-unused-vars': 0,
   },
 };

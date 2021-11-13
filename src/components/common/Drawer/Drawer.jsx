@@ -1,15 +1,15 @@
 import React from 'react';
-import { Swipeable, defineSwipe } from 'react-touch';
+import { useSwipeable } from 'react-swipeable';
 import * as S from './Drawer.styles';
 
 export const Drawer = ({ setDrawerVisible, children, ...props }) => {
-  const swipe = defineSwipe({ swipeDistance: 50 });
+  const handlers = useSwipeable({
+    onSwipedDown: () => setDrawerVisible(false),
+  });
 
   return (
-    <Swipeable config={swipe} onSwipeDown={() => setDrawerVisible(false)}>
-      <S.Drawer height={450} placement="bottom" onClose={() => setDrawerVisible(false)} {...props}>
-        {children}
-      </S.Drawer>
-    </Swipeable>
+    <S.Drawer height={450} placement="bottom" onClose={() => setDrawerVisible(false)} {...props}>
+      <S.SwipeWrapper {...handlers}>{children}</S.SwipeWrapper>
+    </S.Drawer>
   );
 };
