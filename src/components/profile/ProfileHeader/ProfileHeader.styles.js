@@ -19,7 +19,7 @@ export const BalanceText = styled(Typography.Text)`
 `;
 
 export const ValueText = styled(Typography.Text)`
-  font-size: ${(props) => props.theme.typography.size.xl};
+  font-size: ${(props) => props.theme.typography.size.xxl};
 
   font-weight: ${(props) => props.theme.typography.weight.semiBold};
 
