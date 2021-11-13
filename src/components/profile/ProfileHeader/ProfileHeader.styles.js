@@ -9,7 +9,7 @@ export const HeaderCard = styled(Card)`
 export const BalanceText = styled(Typography.Text)`
   opacity: 0.7;
 
-  font-size: ${(props) => props.theme.typography.size.lg};
+  font-size: ${(props) => props.theme.typography.size.xl};
 
   color: ${(props) => props.theme.colors.text.main};
 
