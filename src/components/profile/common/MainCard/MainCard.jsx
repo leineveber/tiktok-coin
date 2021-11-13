@@ -20,16 +20,20 @@ export const MainCard = ({
       </Col>
 
       <Col span={24}>
-        <S.Description>{description}</S.Description>
-      </Col>
-
-      <Col span={24}>
-        <Row gutter={[20, 0]}>
-          <Col>
-            <Button type="default">{btnText}</Button>
+        <Row gutter={[0, 5]}>
+          <Col span={24}>
+            <S.Description>{description}</S.Description>
           </Col>
 
-          {children && <Col>{children()}</Col>}
+          <Col span={24}>
+            <Row gutter={[20, 0]}>
+              <Col>
+                <Button type="default">{btnText}</Button>
+              </Col>
+
+              {children && <Col>{children()}</Col>}
+            </Row>
+          </Col>
         </Row>
       </Col>
 
