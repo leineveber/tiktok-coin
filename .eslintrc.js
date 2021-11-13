@@ -33,6 +33,5 @@ module.exports = {
     'no-unused-expressions': 0,
     indent: 0,
     'arrow-body-style': 0,
-    'no-unused-vars': 0,
   },
 };

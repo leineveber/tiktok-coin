@@ -2,6 +2,8 @@ import { Drawer as AntDrawer } from 'antd';
 import styled from 'styled-components';
 
 export const Drawer = styled(AntDrawer)`
+  z-index: 999;
+
   & .ant-drawer-content-wrapper {
     overflow-x: hidden;
     z-index: 3;
