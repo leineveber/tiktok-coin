@@ -41,6 +41,11 @@ export const MainFooter = styled(Layout.Footer)`
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 4.4375rem;
 
   border-top: 1px solid ${(props) => props.theme.colors.border};
+
+  @media only screen and ${(props) => props.theme.media.md} {
+    height: 5.15625rem;
+  }
 `;
