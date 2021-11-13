@@ -20,7 +20,7 @@ export const Withdraw = () => {
       />
 
       {!isTablet && (
-        <Drawer visible={isMenuVisible} onClose={() => setMenuVisible(false)}>
+        <Drawer visible={isMenuVisible} setDrawerVisible={() => setMenuVisible(false)}>
           <WithdrawMenu />
         </Drawer>
       )}

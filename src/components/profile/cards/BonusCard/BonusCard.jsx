@@ -24,7 +24,7 @@ export const BonusCard = () => {
       />
 
       {!isDesktop && (
-        <Drawer visible={isMenuVisible} onClose={() => setMenuVisible(false)}>
+        <Drawer visible={isMenuVisible} setDrawerVisible={() => setMenuVisible(false)}>
           <BonusMenu />
         </Drawer>
       )}

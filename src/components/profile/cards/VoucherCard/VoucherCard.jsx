@@ -24,7 +24,7 @@ export const VoucherCard = () => {
       />
 
       {!isDesktop && (
-        <Drawer height={400} visible={isMenuVisible} onClose={() => setMenuVisible(false)}>
+        <Drawer height={400} visible={isMenuVisible} setDrawerVisible={() => setMenuVisible(false)}>
           <VoucherMenu />
         </Drawer>
       )}
