@@ -59,6 +59,7 @@ const typography = {
 
 const border = {
   small: '6px',
+  base: '8px',
   medium: '15px',
   large: '30px',
 };
