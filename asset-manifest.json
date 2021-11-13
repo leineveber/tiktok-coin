@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/tiktok-coin/static/js/main.ebe90835.chunk.js",
-    "main.js.map": "/tiktok-coin/static/js/main.ebe90835.chunk.js.map",
-    "runtime-main.js": "/tiktok-coin/static/js/runtime-main.f1ccd8d1.js",
-    "runtime-main.js.map": "/tiktok-coin/static/js/runtime-main.f1ccd8d1.js.map",
-    "static/css/2.b3747ec8.chunk.css": "/tiktok-coin/static/css/2.b3747ec8.chunk.css",
-    "static/js/2.e5d6f3a0.chunk.js": "/tiktok-coin/static/js/2.e5d6f3a0.chunk.js",
-    "static/js/2.e5d6f3a0.chunk.js.map": "/tiktok-coin/static/js/2.e5d6f3a0.chunk.js.map",
-    "static/js/3.5dba0082.chunk.js": "/tiktok-coin/static/js/3.5dba0082.chunk.js",
-    "static/js/3.5dba0082.chunk.js.map": "/tiktok-coin/static/js/3.5dba0082.chunk.js.map",
+    "main.js": "/tiktok-coin/static/js/main.d7ccbbe5.chunk.js",
+    "main.js.map": "/tiktok-coin/static/js/main.d7ccbbe5.chunk.js.map",
+    "runtime-main.js": "/tiktok-coin/static/js/runtime-main.cf4216d8.js",
+    "runtime-main.js.map": "/tiktok-coin/static/js/runtime-main.cf4216d8.js.map",
+    "static/css/2.24f41274.chunk.css": "/tiktok-coin/static/css/2.24f41274.chunk.css",
+    "static/js/2.2b9679e1.chunk.js": "/tiktok-coin/static/js/2.2b9679e1.chunk.js",
+    "static/js/2.2b9679e1.chunk.js.map": "/tiktok-coin/static/js/2.2b9679e1.chunk.js.map",
+    "static/js/3.933d09da.chunk.js": "/tiktok-coin/static/js/3.933d09da.chunk.js",
+    "static/js/3.933d09da.chunk.js.map": "/tiktok-coin/static/js/3.933d09da.chunk.js.map",
     "index.html": "/tiktok-coin/index.html",
-    "static/css/2.b3747ec8.chunk.css.map": "/tiktok-coin/static/css/2.b3747ec8.chunk.css.map",
-    "static/js/2.e5d6f3a0.chunk.js.LICENSE.txt": "/tiktok-coin/static/js/2.e5d6f3a0.chunk.js.LICENSE.txt",
+    "static/css/2.24f41274.chunk.css.map": "/tiktok-coin/static/css/2.24f41274.chunk.css.map",
+    "static/js/2.2b9679e1.chunk.js.LICENSE.txt": "/tiktok-coin/static/js/2.2b9679e1.chunk.js.LICENSE.txt",
     "static/media/telegram.eb4fe206.png": "/tiktok-coin/static/media/telegram.eb4fe206.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1ccd8d1.js",
-    "static/css/2.b3747ec8.chunk.css",
-    "static/js/2.e5d6f3a0.chunk.js",
-    "static/js/main.ebe90835.chunk.js"
+    "static/js/runtime-main.cf4216d8.js",
+    "static/css/2.24f41274.chunk.css",
+    "static/js/2.2b9679e1.chunk.js",
+    "static/js/main.d7ccbbe5.chunk.js"
   ]
 }
