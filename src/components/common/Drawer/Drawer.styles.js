@@ -2,8 +2,6 @@ import { Drawer as AntDrawer } from 'antd';
 import styled from 'styled-components';
 
 export const Drawer = styled(AntDrawer)`
-  z-index: 999;
-
   & .ant-drawer-content-wrapper {
     overflow-x: hidden;
     z-index: 3;
@@ -18,5 +16,5 @@ export const SwipeWrapper = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 24px;
+  padding: 24px 24px 48px 24px;
 `;
