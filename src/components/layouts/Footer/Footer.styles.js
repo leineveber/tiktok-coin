@@ -8,7 +8,7 @@ export const Row = styled.div`
 `;
 
 export const Btn = styled(Button)`
-  height: unset;
+  height: 2.8125rem;
   line-height: 1.3;
   padding: 2px;
   width: 20%;
@@ -18,6 +18,7 @@ export const Btn = styled(Button)`
 
   @media only screen and ${(props) => props.theme.media.md} {
     line-height: 1.5;
+    height: 3.5rem;
 
     font-size: ${(props) => props.theme.typography.size.md};
   }
