@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/tiktok-coin/static/js/main.b597b476.chunk.js",
-    "main.js.map": "/tiktok-coin/static/js/main.b597b476.chunk.js.map",
+    "main.js": "/tiktok-coin/static/js/main.d72d6129.chunk.js",
+    "main.js.map": "/tiktok-coin/static/js/main.d72d6129.chunk.js.map",
     "runtime-main.js": "/tiktok-coin/static/js/runtime-main.0ef87339.js",
     "runtime-main.js.map": "/tiktok-coin/static/js/runtime-main.0ef87339.js.map",
-    "static/css/2.18ac2e1a.chunk.css": "/tiktok-coin/static/css/2.18ac2e1a.chunk.css",
+    "static/css/2.510d87c4.chunk.css": "/tiktok-coin/static/css/2.510d87c4.chunk.css",
     "static/js/2.0a635282.chunk.js": "/tiktok-coin/static/js/2.0a635282.chunk.js",
     "static/js/2.0a635282.chunk.js.map": "/tiktok-coin/static/js/2.0a635282.chunk.js.map",
     "static/js/3.5e9812b2.chunk.js": "/tiktok-coin/static/js/3.5e9812b2.chunk.js",
     "static/js/3.5e9812b2.chunk.js.map": "/tiktok-coin/static/js/3.5e9812b2.chunk.js.map",
     "index.html": "/tiktok-coin/index.html",
-    "static/css/2.18ac2e1a.chunk.css.map": "/tiktok-coin/static/css/2.18ac2e1a.chunk.css.map",
+    "static/css/2.510d87c4.chunk.css.map": "/tiktok-coin/static/css/2.510d87c4.chunk.css.map",
     "static/js/2.0a635282.chunk.js.LICENSE.txt": "/tiktok-coin/static/js/2.0a635282.chunk.js.LICENSE.txt",
     "static/media/custom-banner.de3e0962.png": "/tiktok-coin/static/media/custom-banner.de3e0962.png",
     "static/media/telegram.eb4fe206.png": "/tiktok-coin/static/media/telegram.eb4fe206.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0ef87339.js",
-    "static/css/2.18ac2e1a.chunk.css",
+    "static/css/2.510d87c4.chunk.css",
     "static/js/2.0a635282.chunk.js",
-    "static/js/main.b597b476.chunk.js"
+    "static/js/main.d72d6129.chunk.js"
   ]
 }
