@@ -1,28 +1,28 @@
 import React from 'react';
 import { routesPaths } from 'routes/routesPaths';
+import { GoldOutlined } from '@ant-design/icons';
 import {
-  TeamOutlined,
-  ShoppingCartOutlined,
-  UserOutlined,
-  GoldOutlined,
-  MenuOutlined,
-} from '@ant-design/icons';
+  Icon24Users3Outline,
+  Icon24ShoppingCartOutline,
+  Icon24UserOutline,
+  Icon24MenuOutline,
+} from '@vkontakte/icons';
 
 export const footerNavigation = [
   {
     path: routesPaths.TOP_PAGE.path,
     name: routesPaths.TOP_PAGE.name,
-    icon: <TeamOutlined />,
+    icon: <Icon24Users3Outline />,
   },
   {
     path: routesPaths.SHOP_PAGE.path,
     name: routesPaths.SHOP_PAGE.name,
-    icon: <ShoppingCartOutlined />,
+    icon: <Icon24ShoppingCartOutline />,
   },
   {
     path: routesPaths.MAIN_PAGE.path,
     name: routesPaths.MAIN_PAGE.name,
-    icon: <UserOutlined />,
+    icon: <Icon24UserOutline />,
   },
   {
     path: routesPaths.REFERALS_PAGE.path,
@@ -32,6 +32,6 @@ export const footerNavigation = [
   {
     path: routesPaths.MORE_PAGE.path,
     name: routesPaths.MORE_PAGE.name,
-    icon: <MenuOutlined />,
+    icon: <Icon24MenuOutline />,
   },
 ];
