@@ -61,14 +61,25 @@ export const Title = styled(Typography.Text)`
 `;
 
 export const Description = styled(Typography.Text)`
+  display: block;
   opacity: 0.5;
-  line-height: 1;
 
   color: ${(props) => props.theme.colors.text.main};
 
   @media only screen and ${(props) => props.theme.media.md} {
     font-size: ${(props) => props.theme.typography.size.xl};
   }
+`;
+
+export const Text = styled(Typography.Text)`
+  display: block;
+  opacity: 0.4;
+
+  font-size: ${(props) => props.theme.typography.size.xs};
+
+  font-weight: ${(props) => props.theme.typography.weight.thin};
+
+  color: ${(props) => props.theme.colors.text.main};
 `;
 
 export const ImgWrapper = styled.div`

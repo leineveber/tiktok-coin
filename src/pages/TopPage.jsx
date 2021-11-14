@@ -10,7 +10,7 @@ export const TopPage = () => {
     <Col span={24} key={index}>
       <Profile
         index={index + 1}
-        src={profile.img}
+        src={profile.image_url}
         name={profile.name}
         description={`Посмотрел: ${profile.tiktoks_watched}`}
       />

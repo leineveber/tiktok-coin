@@ -3,7 +3,7 @@ export const useTop = () => {
     {
       name: 'Алла Казарцева',
       tiktoks_watched: 123,
-      img: null,
+      image_url: null,
     },
     {
       name: 'Алла Казарцева',
