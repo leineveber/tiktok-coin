@@ -33,7 +33,7 @@ const colors = {
     vipSilver: 'linear-gradient(to top right, #69c6ed, #585ee0)',
     booster: 'linear-gradient(to top right, #ecb818, #ce5c35)',
     icon: 'rgb(0, 140, 255)',
-    iconRed: standardColors.red,
+    contrast: standardColors.black,
   },
   text: {
     main: standardColors.white,
