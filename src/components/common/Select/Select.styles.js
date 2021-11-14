@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+// import { Select as AntSelect } from 'antd';
+
+// export const Select = styled(AntSelect)``;
 
 export const Select = styled.select`
   width: 100%;

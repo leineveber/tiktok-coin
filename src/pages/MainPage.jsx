@@ -1,35 +1,67 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState, useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 import { Col, Row } from 'antd';
-import { BonusCard } from 'components/profile/cards/BonusCard/BonusCard';
-import { VoucherCard } from 'components/profile/cards/VoucherCard/VoucherCard';
-import { InstallCard } from 'components/profile/cards/InstallCard/InstallCard';
-import { HelpCard } from 'components/profile/cards/HelpCard/HelpCard';
-import { WatchCard } from 'components/profile/cards/WatchCard/WatchCard';
+import { BonusCard } from 'components/profile/BonusCard/BonusCard';
+import { VoucherCard } from 'components/profile/VoucherCard/VoucherCard';
+import { InstallCard } from 'components/profile/InstallCard/InstallCard';
+import { HelpCard } from 'components/profile/HelpCard/HelpCard';
+import { WatchCard } from 'components/profile/WatchCard/WatchCard';
+import { CustomCard } from 'components/common/cards/CustomCard/CustomCard';
 
-export const MainPage = () => (
-  <Row gutter={[0, 20]}>
-    <Col span={24}>
-      <WatchCard />
-    </Col>
+const baseCards = [<BonusCard />, <VoucherCard />, <InstallCard />, <HelpCard />];
 
-    <Col span={24}>
-      <Row gutter={[10, 10]}>
-        <Col span={12}>
-          <BonusCard />
+export const MainPage = () => {
+  const theme = useContext(ThemeContext);
+
+  const [customCard, setCustomCard] = useState({
+    visible: false,
+    title: '',
+    description: '',
+    text: '',
+    btnText: '',
+  });
+
+  useEffect(() => {
+    setCustomCard({
+      visible: true,
+      title: 'Кастомный баннер',
+      description: 'Описание',
+      text: 'До конца 1:23:45',
+      btnText: 'Текст 123',
+    });
+  }, []);
+
+  const baseCardsMemo = useMemo(
+    () =>
+      baseCards.map((Card, index) => (
+        <Col key={index} span={12}>
+          {Card}
         </Col>
+      )),
+    [],
+  );
 
-        <Col span={12}>
-          <VoucherCard />
-        </Col>
+  return (
+    <Row gutter={[0, 20]}>
+      <Col span={24}>
+        <WatchCard />
+      </Col>
 
-        <Col span={12}>
-          <InstallCard />
-        </Col>
+      <Col span={24}>
+        <Row gutter={[10, 10]}>{baseCardsMemo}</Row>
+      </Col>
 
-        <Col span={12}>
-          <HelpCard />
+      {customCard.visible && (
+        <Col span={24}>
+          <CustomCard
+            title={customCard.title}
+            description={customCard.description}
+            text={customCard.text}
+            btnText={customCard.btnText}
+            background={theme.colors.background.secondary}
+          />
         </Col>
-      </Row>
-    </Col>
-  </Row>
-);
+      )}
+    </Row>
+  );
+};

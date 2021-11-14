@@ -24,7 +24,14 @@ const colors = {
     success: standardColors.green,
     error: standardColors.red,
     warning: standardColors.orange,
-    background: standardColors.white,
+  },
+  background: {
+    main: standardColors.white,
+    secondary: 'linear-gradient(to top right, #6849d0, #a948ea)',
+    crownBalance: '#8464fb',
+    autoClicker: '#c9295e',
+    vipSilver: 'linear-gradient(to top right, #69c6ed, #585ee0)',
+    booster: 'linear-gradient(to top right, #ecb818, #ce5c35)',
   },
   text: {
     main: standardColors.white,

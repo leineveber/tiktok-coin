@@ -9,7 +9,9 @@ export const Drawer = ({ setDrawerVisible, children, ...props }) => {
 
   return (
     <S.Drawer height={500} placement="bottom" onClose={() => setDrawerVisible(false)} {...props}>
-      <S.SwipeWrapper {...handlers}>{children}</S.SwipeWrapper>
+      <S.SwipeWrapper className="swipe" {...handlers}>
+        {children}
+      </S.SwipeWrapper>
     </S.Drawer>
   );
 };
