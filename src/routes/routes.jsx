@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { MainPage } from 'pages/MainPage';
 import { MorePage } from 'pages/MorePage';
 import { ReferalsPage } from 'pages/ReferalsPage';
@@ -9,23 +8,23 @@ import { routesPaths } from './routesPaths';
 
 export const routes = [
   {
-    path: routesPaths.MAIN_PAGE,
+    path: routesPaths.MAIN_PAGE.path,
     element: <MainPage />,
   },
   {
-    path: routesPaths.TOP_PAGE,
+    path: routesPaths.TOP_PAGE.path,
     element: <TopPage />,
   },
   {
-    path: routesPaths.SHOP_PAGE,
+    path: routesPaths.SHOP_PAGE.path,
     element: <ShopPage />,
   },
   {
-    path: routesPaths.REFERALS_PAGE,
+    path: routesPaths.REFERALS_PAGE.path,
     element: <ReferalsPage />,
   },
   {
-    path: routesPaths.MORE_PAGE,
+    path: routesPaths.MORE_PAGE.path,
     element: <MorePage />,
   },
 ];

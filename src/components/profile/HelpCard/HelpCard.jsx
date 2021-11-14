@@ -9,7 +9,7 @@ export const HelpCard = () => {
   const theme = useContext(ThemeContext);
 
   return (
-    <Link to={routesPaths.MORE_PAGE}>
+    <Link to={routesPaths.MORE_PAGE.path}>
       <BaseCard title="Помощь" icon={help} background={theme.standardColors.orangeLight} />
     </Link>
   );
