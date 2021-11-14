@@ -1,6 +1,12 @@
 import React from 'react';
 import { routesPaths } from 'routes/routesPaths';
-import { TeamOutlined, ShoppingCartOutlined, UserOutlined, GoldOutlined, MenuOutlined } from '@ant-design/icons';
+import {
+  TeamOutlined,
+  ShoppingCartOutlined,
+  UserOutlined,
+  GoldOutlined,
+  MenuOutlined,
+} from '@ant-design/icons';
 
 export const footerNavigation = [
   {
