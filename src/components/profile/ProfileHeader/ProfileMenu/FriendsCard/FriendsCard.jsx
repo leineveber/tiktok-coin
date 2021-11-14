@@ -1,11 +1,11 @@
 import React from 'react';
-import { TeamOutlined } from '@ant-design/icons';
+import { Icon24Users3Outline } from '@vkontakte/icons';
 import { Link } from 'react-router-dom';
 import { routesPaths } from 'routes/routesPaths';
 import { ProfileHeaderBtn } from '../../ProfileHeaderBtn/ProfileHeaderBtn';
 
 export const FriendsCard = () => (
   <Link to={routesPaths.REFERALS_PAGE.path}>
-    <ProfileHeaderBtn icon={<TeamOutlined />} text="Друзья" />
+    <ProfileHeaderBtn icon={<Icon24Users3Outline />} text="Друзья" />
   </Link>
 );

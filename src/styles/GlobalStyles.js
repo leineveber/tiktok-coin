@@ -15,4 +15,8 @@ export const GlobalStyles = createGlobalStyle`
     body {
         min-width: 360px;
     }
+
+    .Icon {
+        margin: 0 auto;
+    }
 `;
