@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Col, Row } from 'antd';
 import { EXCHANGE_VALUE } from 'constants/config/exchangeValue';
 import { ProfileMenu } from './ProfileMenu/ProfileMenu';
 import { ProfileText } from './ProfileText/ProfileText';
+import { useUser } from 'hooks/useUser';
 
 export const ProfileHeader = () => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    setUser({
-      balance: 5017,
-    });
-  }, []);
+  const user = useUser();
 
   return (
     <Row gutter={[0, 20]}>
