@@ -8,6 +8,10 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html, body {
+        height: 100%;
+    }
+
     body {
         min-width: 360px;
     }
