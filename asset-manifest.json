@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/tiktok-coin/static/js/main.ce4891af.chunk.js",
-    "main.js.map": "/tiktok-coin/static/js/main.ce4891af.chunk.js.map",
+    "main.js": "/tiktok-coin/static/js/main.389de0cc.chunk.js",
+    "main.js.map": "/tiktok-coin/static/js/main.389de0cc.chunk.js.map",
     "runtime-main.js": "/tiktok-coin/static/js/runtime-main.bf35e652.js",
     "runtime-main.js.map": "/tiktok-coin/static/js/runtime-main.bf35e652.js.map",
-    "static/css/2.d2562967.chunk.css": "/tiktok-coin/static/css/2.d2562967.chunk.css",
-    "static/js/2.c4b1509e.chunk.js": "/tiktok-coin/static/js/2.c4b1509e.chunk.js",
-    "static/js/2.c4b1509e.chunk.js.map": "/tiktok-coin/static/js/2.c4b1509e.chunk.js.map",
+    "static/css/2.c04e9b6f.chunk.css": "/tiktok-coin/static/css/2.c04e9b6f.chunk.css",
+    "static/js/2.62ece9e5.chunk.js": "/tiktok-coin/static/js/2.62ece9e5.chunk.js",
+    "static/js/2.62ece9e5.chunk.js.map": "/tiktok-coin/static/js/2.62ece9e5.chunk.js.map",
     "static/js/3.93f87a19.chunk.js": "/tiktok-coin/static/js/3.93f87a19.chunk.js",
     "static/js/3.93f87a19.chunk.js.map": "/tiktok-coin/static/js/3.93f87a19.chunk.js.map",
     "index.html": "/tiktok-coin/index.html",
-    "static/css/2.d2562967.chunk.css.map": "/tiktok-coin/static/css/2.d2562967.chunk.css.map",
-    "static/js/2.c4b1509e.chunk.js.LICENSE.txt": "/tiktok-coin/static/js/2.c4b1509e.chunk.js.LICENSE.txt",
+    "static/css/2.c04e9b6f.chunk.css.map": "/tiktok-coin/static/css/2.c04e9b6f.chunk.css.map",
+    "static/js/2.62ece9e5.chunk.js.LICENSE.txt": "/tiktok-coin/static/js/2.62ece9e5.chunk.js.LICENSE.txt",
     "static/media/custom-banner.de3e0962.png": "/tiktok-coin/static/media/custom-banner.de3e0962.png",
     "static/media/telegram.eb4fe206.png": "/tiktok-coin/static/media/telegram.eb4fe206.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bf35e652.js",
-    "static/css/2.d2562967.chunk.css",
-    "static/js/2.c4b1509e.chunk.js",
-    "static/js/main.ce4891af.chunk.js"
+    "static/css/2.c04e9b6f.chunk.css",
+    "static/js/2.62ece9e5.chunk.js",
+    "static/js/main.389de0cc.chunk.js"
   ]
 }
