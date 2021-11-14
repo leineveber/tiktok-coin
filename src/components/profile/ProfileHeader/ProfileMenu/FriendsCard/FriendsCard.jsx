@@ -5,7 +5,7 @@ import { routesPaths } from 'routes/routesPaths';
 import { ProfileHeaderBtn } from '../../ProfileHeaderBtn/ProfileHeaderBtn';
 
 export const FriendsCard = () => (
-  <Link to={routesPaths.REFERALS_PAGE}>
+  <Link to={routesPaths.REFERALS_PAGE.path}>
     <ProfileHeaderBtn icon={<TeamOutlined />} text="Друзья" />
   </Link>
 );

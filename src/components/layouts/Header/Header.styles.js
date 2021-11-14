@@ -10,6 +10,18 @@ export const UsernameText = styled(Typography.Text)`
   }
 `;
 
+export const PageTitle = styled(Typography.Title)`
+  &.ant-typography {
+    margin-bottom: 0;
+
+    font-size: ${(props) => props.theme.typography.size.xxl};
+
+    font-weight: ${(props) => props.theme.typography.weight.medium};
+
+    color: ${(props) => props.theme.colors.text.main};
+  }
+`;
+
 export const OnlineText = styled(Typography.Text)`
   color: ${(props) => hexToRGB(props.theme.colors.text.main, 0.9)};
 

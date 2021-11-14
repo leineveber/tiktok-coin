@@ -1,7 +1,22 @@
 export const routesPaths = {
-  MAIN_PAGE: '/',
-  TOP_PAGE: '/top',
-  SHOP_PAGE: '/shop',
-  REFERALS_PAGE: '/referals',
-  MORE_PAGE: '/more',
+  MAIN_PAGE: {
+    path: '/',
+    name: 'Профиль',
+  },
+  TOP_PAGE: {
+    path: '/top',
+    name: 'Топ',
+  },
+  SHOP_PAGE: {
+    path: '/shop',
+    name: 'Магазин',
+  },
+  REFERALS_PAGE: {
+    path: '/referals',
+    name: 'Рефералы',
+  },
+  MORE_PAGE: {
+    path: '/more',
+    name: 'Еще',
+  },
 };

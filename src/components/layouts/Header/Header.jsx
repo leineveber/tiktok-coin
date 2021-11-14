@@ -13,16 +13,22 @@ export const Header = () => {
   const location = useLocation();
 
   return (
-    <Row justify="space-between" gutter={[20, 20]}>
+    <Row justify="space-between" gutter={[20, 20]} align="middle">
       <Col>
-        <S.UsernameText>{username || 'Юзернейм ТГ'}</S.UsernameText>
+        {location.pathname === routesPaths.MAIN_PAGE.path ? (
+          <S.UsernameText>{username || 'Юзернейм ТГ'}</S.UsernameText>
+        ) : (
+          <S.PageTitle>
+            {Object.values(routesPaths).find((route) => route.path === location.pathname).name}
+          </S.PageTitle>
+        )}
       </Col>
 
       <Col>
         <S.OnlineText>Онлайн: {onlineUsers || 'Загрузка...'}</S.OnlineText>
       </Col>
 
-      {location.pathname === routesPaths.MAIN_PAGE && (
+      {location.pathname === routesPaths.MAIN_PAGE.path && (
         <Col span={24}>
           <ProfileHeader />
         </Col>
@@ -30,3 +36,9 @@ export const Header = () => {
     </Row>
   );
 };
+
+// {title ? (
+//
+// ) : (
+//
+// )}
