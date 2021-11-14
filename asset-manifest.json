@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/tiktok-coin/static/js/main.61feda4a.chunk.js",
-    "main.js.map": "/tiktok-coin/static/js/main.61feda4a.chunk.js.map",
-    "runtime-main.js": "/tiktok-coin/static/js/runtime-main.6d7b3fdd.js",
-    "runtime-main.js.map": "/tiktok-coin/static/js/runtime-main.6d7b3fdd.js.map",
-    "static/css/2.17c1c9b4.chunk.css": "/tiktok-coin/static/css/2.17c1c9b4.chunk.css",
-    "static/js/2.3c570976.chunk.js": "/tiktok-coin/static/js/2.3c570976.chunk.js",
-    "static/js/2.3c570976.chunk.js.map": "/tiktok-coin/static/js/2.3c570976.chunk.js.map",
-    "static/js/3.488b5e6c.chunk.js": "/tiktok-coin/static/js/3.488b5e6c.chunk.js",
-    "static/js/3.488b5e6c.chunk.js.map": "/tiktok-coin/static/js/3.488b5e6c.chunk.js.map",
+    "main.js": "/tiktok-coin/static/js/main.68091aea.chunk.js",
+    "main.js.map": "/tiktok-coin/static/js/main.68091aea.chunk.js.map",
+    "runtime-main.js": "/tiktok-coin/static/js/runtime-main.bf35e652.js",
+    "runtime-main.js.map": "/tiktok-coin/static/js/runtime-main.bf35e652.js.map",
+    "static/css/2.c893d1d7.chunk.css": "/tiktok-coin/static/css/2.c893d1d7.chunk.css",
+    "static/js/2.4aa37a7a.chunk.js": "/tiktok-coin/static/js/2.4aa37a7a.chunk.js",
+    "static/js/2.4aa37a7a.chunk.js.map": "/tiktok-coin/static/js/2.4aa37a7a.chunk.js.map",
+    "static/js/3.93f87a19.chunk.js": "/tiktok-coin/static/js/3.93f87a19.chunk.js",
+    "static/js/3.93f87a19.chunk.js.map": "/tiktok-coin/static/js/3.93f87a19.chunk.js.map",
     "index.html": "/tiktok-coin/index.html",
-    "static/css/2.17c1c9b4.chunk.css.map": "/tiktok-coin/static/css/2.17c1c9b4.chunk.css.map",
-    "static/js/2.3c570976.chunk.js.LICENSE.txt": "/tiktok-coin/static/js/2.3c570976.chunk.js.LICENSE.txt",
+    "static/css/2.c893d1d7.chunk.css.map": "/tiktok-coin/static/css/2.c893d1d7.chunk.css.map",
+    "static/js/2.4aa37a7a.chunk.js.LICENSE.txt": "/tiktok-coin/static/js/2.4aa37a7a.chunk.js.LICENSE.txt",
     "static/media/custom-banner.de3e0962.png": "/tiktok-coin/static/media/custom-banner.de3e0962.png",
     "static/media/telegram.eb4fe206.png": "/tiktok-coin/static/media/telegram.eb4fe206.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d7b3fdd.js",
-    "static/css/2.17c1c9b4.chunk.css",
-    "static/js/2.3c570976.chunk.js",
-    "static/js/main.61feda4a.chunk.js"
+    "static/js/runtime-main.bf35e652.js",
+    "static/css/2.c893d1d7.chunk.css",
+    "static/js/2.4aa37a7a.chunk.js",
+    "static/js/main.68091aea.chunk.js"
   ]
 }
