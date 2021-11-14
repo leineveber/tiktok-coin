@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Col, Row } from 'antd';
 import { useUser } from 'hooks/useUser';
-import { ReferalUser } from './ReferalUser/ReferalUser';
+import { Profile } from 'components/common/Profile/Profile';
 import * as S from './ReferalsTop.styles';
 
 export const ReferalsTop = () => {
@@ -11,7 +11,7 @@ export const ReferalsTop = () => {
     () =>
       ref_users.map((ref, index) => (
         <Col key={index} span={24}>
-          <ReferalUser src={ref.img} name={ref.name} />
+          <Profile src={ref.img} name={ref.name} />
         </Col>
       )),
     [ref_users],
