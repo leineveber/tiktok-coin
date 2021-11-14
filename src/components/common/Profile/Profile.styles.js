@@ -14,4 +14,18 @@ export const Avatar = styled(AntAvatar)`
   }
 `;
 
-export const Title = styled(Typography.Text)``;
+export const Title = styled(Typography.Text)`
+  display: block;
+
+  color: ${(props) => props.theme.colors.text.contrast};
+
+  font-size: ${(props) => props.theme.typography.size.lg};
+
+  font-weight: ${(props) => props.theme.typography.weight.medium};
+`;
+
+export const Description = styled(Typography.Text)``;
+
+export const Text = styled(Typography.Text)`
+  opacity: 0.6;
+`;
