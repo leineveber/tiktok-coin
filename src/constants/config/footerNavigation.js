@@ -1,11 +1,11 @@
 import React from 'react';
 import { routesPaths } from 'routes/routesPaths';
-import { GoldOutlined } from '@ant-design/icons';
 import {
   Icon24Users3Outline,
   Icon24ShoppingCartOutline,
   Icon24UserOutline,
   Icon24MenuOutline,
+  Icon24UserAddOutline,
 } from '@vkontakte/icons';
 
 export const footerNavigation = [
@@ -27,7 +27,7 @@ export const footerNavigation = [
   {
     path: routesPaths.REFERALS_PAGE.path,
     name: routesPaths.REFERALS_PAGE.name,
-    icon: <GoldOutlined />,
+    icon: <Icon24UserAddOutline />,
   },
   {
     path: routesPaths.MORE_PAGE.path,

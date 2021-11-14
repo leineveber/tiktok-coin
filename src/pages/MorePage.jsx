@@ -1,22 +1,19 @@
-import React, { useContext, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { Row, Col } from 'antd';
 import { moreLinksData } from 'constants/data/moreLinksData';
 import { MoreLinkItem } from 'components/more/MoreLinkItem/MoreLinkItem';
-import { ThemeContext } from 'styled-components';
 import { MoreTitle } from 'components/more/MoreTitle/MoreTitle';
 import { MoreTermsOfUse } from 'components/more/MoreTermsOfUse/MoreTermsOfUse';
 
 export const MorePage = () => {
-  const theme = useContext(ThemeContext);
-
   const linksMemo = useMemo(
     () =>
       moreLinksData.map((link) => (
         <Col key={link.path} span={24}>
-          <MoreLinkItem {...link} background={theme.colors.background[link.background]} />
+          <MoreLinkItem {...link} />
         </Col>
       )),
-    [theme],
+    [],
   );
 
   return (

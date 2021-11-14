@@ -2,13 +2,11 @@ import React from 'react';
 import { Col, Row, Space } from 'antd';
 import * as S from './MoreLinkItem.styles';
 
-export const MoreLinkItem = ({ name: title, description, Icon, background, path }) => {
+export const MoreLinkItem = ({ name: title, description, Icon, path }) => {
   return (
     <a href={path}>
       <Row gutter={[10, 0]} align="middle">
-        <Col>
-          <S.Avatar icon={Icon} background={background} />
-        </Col>
+        <Col>{Icon}</Col>
 
         <Col flex={1}>
           <Row justify="space-between" align="middle">
