@@ -23,12 +23,10 @@ export const Btn = styled(Button)`
     font-size: ${(props) => props.theme.typography.size.md};
   }
 
-  & span[role='img'] {
+  & span[role='img'],
+  .Icon {
+    margin: 0 auto;
     font-size: ${(props) => props.theme.typography.size.xxl};
-
-    @media only screen and ${(props) => props.theme.media.md} {
-      font-size: ${(props) => props.theme.typography.size.xxxl};
-    }
   }
 
   ${(props) =>

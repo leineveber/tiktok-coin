@@ -50,6 +50,6 @@ export const ImgWrapper = styled.div`
   transform: translateX(-50%);
 
   @media only screen and ${(props) => props.theme.media.md} {
-    width: 10rem;
+    width: 12rem;
   }
 `;
