@@ -11,7 +11,7 @@ export const ReferalsTop = () => {
     () =>
       ref_users.map((ref, index) => (
         <Col key={index} span={24}>
-          <Profile src={ref.img} name={ref.name} />
+          <Profile src={ref.image_url} name={ref.name} />
         </Col>
       )),
     [ref_users],

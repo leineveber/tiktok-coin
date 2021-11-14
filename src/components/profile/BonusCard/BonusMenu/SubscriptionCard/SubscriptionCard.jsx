@@ -12,14 +12,13 @@ export const SubscriptionCard = () => {
       title="20 ₽ на баланс"
       description="Бонус за подписку на канал"
       btnText="Получить"
-      background={`linear-gradient(to right top, ${theme.colors.main.primary}, ${theme.colors.main.primaryDark})`}
-      icon={telegramIcon}
-    >
-      {() => (
+      secondBtn={
         <a href="https://t.me/tiktok_coins">
           <Button type="default">Подписаться</Button>
         </a>
-      )}
-    </MainCard>
+      }
+      background={`linear-gradient(to right top, ${theme.colors.main.primary}, ${theme.colors.main.primaryDark})`}
+      icon={telegramIcon}
+    />
   );
 };

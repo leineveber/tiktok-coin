@@ -7,11 +7,12 @@ export const MainCard = ({
   title,
   description,
   btnText,
+  secondBtn,
   background,
+  text,
   icon,
   isPrimary,
   onClick,
-  children,
 }) => (
   <S.MainCard background={background} isPrimary={isPrimary} onClick={onClick}>
     <Row justify="space-between" align="middle" gutter={[0, 0]}>
@@ -23,6 +24,8 @@ export const MainCard = ({
         <Row gutter={[0, 5]}>
           <Col span={24}>
             <S.Description>{description}</S.Description>
+
+            {text && <S.Text>{text}</S.Text>}
           </Col>
 
           <Col span={24}>
@@ -31,7 +34,7 @@ export const MainCard = ({
                 <Button type="default">{btnText}</Button>
               </Col>
 
-              {children && <Col>{children()}</Col>}
+              {secondBtn && <Col>{secondBtn}</Col>}
             </Row>
           </Col>
         </Row>

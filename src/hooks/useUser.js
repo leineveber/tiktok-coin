@@ -2,6 +2,7 @@ export const useUser = () => {
   const user = {
     user_name: 'Username',
     balance: 5017,
+    balance_crowns: 0,
     gotBonusEveryday: false,
     gotBonusInstall: false,
     gotBonusTgChannelSub: false,
@@ -14,7 +15,8 @@ export const useUser = () => {
       },
       {
         name: 'Сергей Соскин',
-        img: 'https://sun9-37.userapi.com/impg/AnB3RDeLm3t7x1YmX6jQcobZzETA94N_1lo0Xg/5CCnpjJUIeU.jpg?size=640x640&quality=96&sign=afa60476b5bc7685e4a8cde8604d7bed&type=album',
+        image_url:
+          'https://sun9-37.userapi.com/impg/AnB3RDeLm3t7x1YmX6jQcobZzETA94N_1lo0Xg/5CCnpjJUIeU.jpg?size=640x640&quality=96&sign=afa60476b5bc7685e4a8cde8604d7bed&type=album',
       },
       {
         name: 'Юзер',
