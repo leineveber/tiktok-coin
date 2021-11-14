@@ -42,10 +42,11 @@ export const Text = styled(Typography.Text)`
 `;
 
 export const ImgWrapper = styled.div`
+  opacity: 0.8;
   position: absolute;
-  width: 8rem;
+  width: 10rem;
   left: 50%;
-  bottom: -40px;
+  bottom: -60px;
   transform: translateX(-50%);
 
   @media only screen and ${(props) => props.theme.media.md} {
