@@ -5,7 +5,7 @@ import { SubscriptionCard } from './SubscriptionCard/SubscriptionCard';
 import { InstallCard } from './InstallCard/InstallCard';
 import { EveryDayCard } from './EveryDayCard/EveryDayCard';
 
-const cards = [<SubscriptionCard />, <InstallCard />, <EveryDayCard />];
+const cards = [<SubscriptionCard key={0} />, <InstallCard key={1} />, <EveryDayCard key={1} />];
 
 export const BonusMenu = () => {
   const cardsMemo = useMemo(

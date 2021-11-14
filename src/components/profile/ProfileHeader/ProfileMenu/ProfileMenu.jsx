@@ -4,7 +4,7 @@ import { WithdrawCard } from './WithdrawCard/WithdrawCard';
 import { FriendsCard } from './FriendsCard/FriendsCard';
 import { ShopCard } from './ShopCard/ShopCard';
 
-const menu = [<WithdrawCard />, <ShopCard />, <FriendsCard />];
+const menu = [<WithdrawCard key={0} />, <ShopCard key={1} />, <FriendsCard key={2} />];
 
 export const ProfileMenu = () => {
   const menuMemo = useMemo(

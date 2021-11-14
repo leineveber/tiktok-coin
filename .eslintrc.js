@@ -1,38 +1,27 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2020: true,
+    node: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react'],
-  settings: {
-    'import/resolver': {
-      node: {
-        paths: ['src'],
-      },
-    },
-  },
+  plugins: ['react', 'react-hooks'],
   rules: {
-    'import/prefer-default-export': 0,
     'react/prop-types': 0,
-    'react/jsx-props-no-spreading': 0,
-    'object-curly-newline': 0,
-    'implicit-arrow-linebreak': 0,
-    'react/jsx-one-expression-per-line': 0,
-    'no-param-reassign': 0,
-    'operator-linebreak': 0,
-    'no-confusing-arrow': 0,
-    'max-len': 0,
-    'no-unused-expressions': 0,
-    indent: 0,
-    'arrow-body-style': 0,
-    'react/no-array-index-key': 0,
+    'react/display-name': 0,
+    'react-hooks/rules-of-hooks': 'error', // Проверяем правила хуков
+    'react-hooks/exhaustive-deps': 'warn', // Проверяем зависимости эффекта
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

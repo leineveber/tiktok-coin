@@ -8,7 +8,12 @@ import { HelpCard } from 'components/profile/HelpCard/HelpCard';
 import { WatchCard } from 'components/profile/WatchCard/WatchCard';
 import { CustomCard } from 'components/common/cards/CustomCard/CustomCard';
 
-const baseCards = [<BonusCard />, <VoucherCard />, <InstallCard />, <HelpCard />];
+const baseCards = [
+  <BonusCard key={0} />,
+  <VoucherCard key={1} />,
+  <InstallCard key={2} />,
+  <HelpCard key={3} />,
+];
 
 export const MainPage = () => {
   const theme = useContext(ThemeContext);
