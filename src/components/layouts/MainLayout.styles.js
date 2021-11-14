@@ -26,7 +26,7 @@ export const MainContent = styled(Layout.Content)`
 
   border-top-right-radius: ${(props) => props.theme.border.large};
 
-  background-color: ${(props) => props.theme.colors.main.background};
+  background-color: ${(props) => props.theme.colors.background.main};
 
   @media only screen and ${(props) => props.theme.media.md} {
     padding: 1.5rem;

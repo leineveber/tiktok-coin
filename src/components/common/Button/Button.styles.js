@@ -5,6 +5,8 @@ import { hexToRGB } from 'utils/utils';
 export const Btn = styled(Button).withConfig({
   shouldForwardProp: (prop) => !['isPayment', 'isSecondary'].includes(prop),
 })`
+  z-index: 2;
+
   ${(props) =>
     props.type === 'text' &&
     css`
