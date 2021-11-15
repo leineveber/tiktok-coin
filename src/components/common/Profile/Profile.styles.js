@@ -17,8 +17,6 @@ export const Avatar = styled(AntAvatar)`
 export const Title = styled(Typography.Text)`
   display: block;
 
-  color: ${(props) => props.theme.colors.text.contrast};
-
   font-size: ${(props) => props.theme.typography.size.lg};
 
   font-weight: ${(props) => props.theme.typography.weight.medium};

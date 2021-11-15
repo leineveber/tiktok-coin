@@ -7,5 +7,5 @@ export const Link = styled.a`
 `;
 
 export const Title = styled(Typography.Text)`
-  opacity: 0.5;
+  color: ${(props) => props.theme.colors.text.additional};
 `;

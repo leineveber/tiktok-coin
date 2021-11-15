@@ -12,20 +12,20 @@ export const useShop = () => {
         image_url: '',
         prices: [
           {
-            label: '1 час - Бесплатно',
+            label: '1 час',
             price: 0,
             default: true,
           },
           {
-            label: '1 день - 119₽',
+            label: '1 день',
             price: 119,
           },
           {
-            label: '1 неделя - 199₽',
+            label: '1 неделя',
             price: 190,
           },
           {
-            label: 'Месяц - 349₽',
+            label: 'Месяц',
             price: 349,
           },
         ],
@@ -43,15 +43,15 @@ export const useShop = () => {
         image_url: '',
         prices: [
           {
-            label: '1 неделя - 299₽',
+            label: '1 неделя',
             price: 299,
           },
           {
-            label: 'Месяц - 499₽',
+            label: 'Месяц',
             price: 499,
           },
           {
-            label: 'Навсегда - 799₽',
+            label: 'Навсегда',
             price: 799,
             default: true,
           },
@@ -68,15 +68,15 @@ export const useShop = () => {
         image_url: '',
         prices: [
           {
-            label: '1 неделя - 49₽',
+            label: '1 неделя',
             price: 49,
           },
           {
-            label: 'Месяц - 99₽',
+            label: 'Месяц',
             price: 99,
           },
           {
-            label: 'Навсегда - 149₽',
+            label: 'Навсегда',
             price: 149,
             default: true,
           },
@@ -91,15 +91,15 @@ export const useShop = () => {
         image_url: '',
         prices: [
           {
-            label: '1 день - 29₽',
+            label: '1 день',
             price: 29,
           },
           {
-            label: '1 неделя - 59₽',
+            label: '1 неделя',
             price: 59,
           },
           {
-            label: 'Месяц - 199₽',
+            label: 'Месяц',
             price: 199,
             default: true,
           },
