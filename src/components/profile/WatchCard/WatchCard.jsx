@@ -13,7 +13,7 @@ export const WatchCard = () => {
         title="Смотреть TikTok"
         description="10-50 TikCoin за просмотр"
         btnText="Смотреть"
-        background={theme.colors.main.info}
+        background={theme.colors.main.primary}
         icon={tiktokIcon}
         isPrimary
       />

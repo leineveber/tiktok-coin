@@ -11,7 +11,7 @@ export const BalanceCard = ({ balance }) => {
       title={`Ваш баланс: ${balance}`}
       description="Нажмите ниже для пополнения"
       text={EXCHANGE_CROWNS_VALUE}
-      background={theme.colors.background.secondary}
+      background={theme.colors.main.additional}
       btnText="Пополнить"
     />
   );

@@ -19,7 +19,7 @@ export const VoucherCard = () => {
       <BaseCard
         title="Активировать ваучер"
         icon={promo}
-        background={theme.colors.main.info}
+        background={theme.colors.main.secondary}
         onClick={() => setMenuVisible(true)}
       />
 

@@ -20,7 +20,7 @@ export const InstallCard = () => {
     <BaseCard
       title="Установить приложение"
       icon={pwa}
-      background={theme.standardColors.redLight}
+      background={theme.colors.background.additional1}
       onClick={onClickInstall}
     />
   );

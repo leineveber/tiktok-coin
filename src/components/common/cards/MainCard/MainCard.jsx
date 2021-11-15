@@ -4,6 +4,7 @@ import { Button } from 'components/common/Button/Button';
 import * as S from './MainCard.styles';
 
 export const MainCard = ({
+  className,
   title,
   description,
   btnText,
@@ -14,7 +15,7 @@ export const MainCard = ({
   isPrimary,
   onClick,
 }) => (
-  <S.MainCard background={background} isPrimary={isPrimary} onClick={onClick}>
+  <S.MainCard className={className} background={background} isPrimary={isPrimary} onClick={onClick}>
     <Row justify="space-between" align="middle" gutter={[0, 0]}>
       <Col span={24}>
         <S.Title>{title}</S.Title>

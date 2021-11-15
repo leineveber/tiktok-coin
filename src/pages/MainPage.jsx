@@ -1,5 +1,4 @@
-import React, { useEffect, useMemo, useState, useContext } from 'react';
-import { ThemeContext } from 'styled-components';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Col, Row } from 'antd';
 import { BonusCard } from 'components/profile/BonusCard/BonusCard';
 import { VoucherCard } from 'components/profile/VoucherCard/VoucherCard';
@@ -16,8 +15,6 @@ const baseCards = [
 ];
 
 export const MainPage = () => {
-  const theme = useContext(ThemeContext);
-
   const [customCard, setCustomCard] = useState({
     visible: false,
     title: '',
@@ -63,7 +60,6 @@ export const MainPage = () => {
             description={customCard.description}
             text={customCard.text}
             btnText={customCard.btnText}
-            background={theme.colors.background.secondary}
           />
         </Col>
       )}
