@@ -64,20 +64,20 @@ export const Btn = styled(Button).withConfig({
   ${(props) =>
     props.isSecondary &&
     css`
-      background: ${props.theme.colors.main.secondary};
+      background: ${props.theme.colors.main.secondaryButton};
 
-      border-color: ${props.theme.colors.main.secondary};
+      border-color: ${props.theme.colors.main.secondaryButton};
 
       &:active {
-        background: ${hexToRGB(props.theme.colors.main.secondary, 0.7)};
+        background: ${hexToRGB(props.theme.colors.main.secondaryButton, 0.7)};
 
-        border-color: ${hexToRGB(props.theme.colors.main.secondary, 0.7)};
+        border-color: ${hexToRGB(props.theme.colors.main.secondaryButton, 0.7)};
       }
 
       &:focus {
-        background: ${props.theme.colors.main.secondary};
+        background: ${props.theme.colors.main.secondaryButton};
 
-        border-color: ${props.theme.colors.main.secondary};
+        border-color: ${props.theme.colors.main.secondaryButton};
       }
     `};
 `;

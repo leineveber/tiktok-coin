@@ -7,7 +7,7 @@ export const Avatar = styled(AntAvatar)`
   align-items: center;
   justify-content: center;
 
-  background-color: ${(props) => hexToRGB(props.theme.colors.background.contrast, 0.07)};
+  background-color: ${(props) => hexToRGB(props.theme.colors.main.contrastBackground, 0.07)};
 
   & > .Icon {
     color: ${(props) => props.theme.colors.text.additional};

@@ -26,7 +26,7 @@ export const MainCard = styled(Card).withConfig({
 
           transform: rotate(15deg);
 
-          background: ${hexToRGB(props.theme.colors.background.main, 0.15)};
+          background: ${hexToRGB(props.theme.colors.main.background, 0.15)};
         }
 
         &::after {
@@ -41,7 +41,7 @@ export const MainCard = styled(Card).withConfig({
 
           transform: rotate(15deg);
 
-          background: ${hexToRGB(props.theme.colors.background.main, 0.15)};
+          background: ${hexToRGB(props.theme.colors.main.background, 0.15)};
         }
       `}
   }

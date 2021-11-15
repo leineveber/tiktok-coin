@@ -15,9 +15,9 @@ export const Avatar = styled(AntAvatar)`
   justify-content: center;
   align-items: center;
 
-  background-color: ${(props) => hexToRGB(props.theme.colors.background.contrast, 0.07)};
+  background-color: ${(props) => hexToRGB(props.theme.colors.main.contrastBackground, 0.07)};
 
-  color: ${(props) => props.theme.colors.background.icon};
+  color: ${(props) => hexToRGB(props.theme.colors.main.secondary, 0.7)};
 `;
 
 export const Title = styled(Typography.Text)`

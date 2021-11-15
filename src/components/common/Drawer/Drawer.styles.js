@@ -20,5 +20,5 @@ export const SwipeWrapper = styled.div`
   left: 0;
   padding: 24px 24px 48px 24px;
 
-  background: ${(props) => props.theme.colors.background.main};
+  background: ${(props) => props.theme.colors.main.background};
 `;

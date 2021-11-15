@@ -17,7 +17,7 @@ export const SubscriptionCard = () => {
           <Button type="default">Подписаться</Button>
         </a>
       }
-      background={`linear-gradient(to right top, ${theme.colors.main.primary}, ${theme.colors.main.primaryDark})`}
+      background={theme.colors.background.primary}
       icon={telegramIcon}
     />
   );

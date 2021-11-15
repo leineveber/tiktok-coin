@@ -19,7 +19,7 @@ export const BonusCard = () => {
       <BaseCard
         title="Доступные бонусы"
         icon={bonus}
-        background={theme.standardColors.greenLight}
+        background={theme.colors.background.additional3}
         onClick={() => setMenuVisible(true)}
       />
 

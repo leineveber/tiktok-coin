@@ -20,7 +20,7 @@ export const BaseCard = styled(Card)`
       border-radius: 50%;
       transform: translate(60%, 40%);
 
-      background-color: ${(props) => hexToRGB(props.theme.colors.background.main, 0.2)};
+      background-color: ${(props) => hexToRGB(props.theme.colors.main.background, 0.2)};
 
       @media only screen and ${(props) => props.theme.media.md} {
         width: 5rem;
@@ -38,7 +38,7 @@ export const BaseCard = styled(Card)`
       border-radius: 50%;
       transform: translate(20%, -30%);
 
-      background-color: ${(props) => hexToRGB(props.theme.colors.background.main, 0.2)};
+      background-color: ${(props) => hexToRGB(props.theme.colors.main.background, 0.2)};
 
       @media only screen and ${(props) => props.theme.media.md} {
         width: 5rem;

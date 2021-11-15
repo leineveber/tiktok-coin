@@ -5,15 +5,17 @@ import { Col, Row } from 'antd';
 import { ShopTitle } from 'components/shop/ShopTitle/ShopTitle';
 import { BalanceCard } from 'components/shop/BalanceCard/BalanceCard';
 import { useUser } from 'hooks/useUser';
+import * as S from './ShopPage.styles';
 
 export const ShopPage = () => {
   const { enhancement, boosters } = useShop();
 
   const { balance_crowns } = useUser();
 
-  const enhancementCardsMemo = enhancement.map((card) => (
+  const enhancementCardsMemo = enhancement.map((card, index) => (
     <Col key={card.title} span={24}>
       <EnhancementCard
+        index={index}
         name={card.name}
         description={card.description}
         icon={card.image_url}
@@ -23,9 +25,10 @@ export const ShopPage = () => {
     </Col>
   ));
 
-  const boostersCardsMemo = boosters.map((card) => (
+  const boostersCardsMemo = boosters.map((card, index) => (
     <Col key={card.title} span={24}>
       <EnhancementCard
+        index={index}
         name={card.name}
         description={card.description}
         icon={card.image_url}
@@ -42,21 +45,21 @@ export const ShopPage = () => {
       </Col>
 
       <Col span={24}>
-        <Row gutter={[0, 10]}>
+        <S.EnhancementRow gutter={[0, 10]}>
           <Col span={24}>
             <ShopTitle>Улучшения:</ShopTitle>
           </Col>
           {enhancementCardsMemo}
-        </Row>
+        </S.EnhancementRow>
       </Col>
 
       <Col span={24}>
-        <Row gutter={[0, 10]}>
+        <S.BoostersRow gutter={[0, 10]}>
           <Col span={24}>
             <ShopTitle>Ускорители:</ShopTitle>
           </Col>
           {boostersCardsMemo}
-        </Row>
+        </S.BoostersRow>
       </Col>
     </Row>
   );
