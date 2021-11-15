@@ -6,7 +6,7 @@ export const SubmitItem = ({ price }) => {
   return (
     <Form.Item>
       <S.Btn type="primary" isPayment htmlType="submit">
-        Купить за {price}
+        {price === 0 ? 'Бесплатно' : `Купить за ${price}₽`}
       </S.Btn>
     </Form.Item>
   );

@@ -28,18 +28,17 @@ const colors = {
   background: {
     main: standardColors.white,
     secondary: 'linear-gradient(to right top, #6849d0, #a948ea)',
+    contrast: standardColors.black,
     crownBalance: '#8464fb',
     autoClicker: '#c9295e',
     vipSilver: 'linear-gradient(to right top, #585ee0, #69c6ed)',
     booster: 'linear-gradient(to right top, #ce5c35, #ecb818)',
     icon: 'rgb(0, 140, 255)',
-    contrast: standardColors.black,
   },
   text: {
     main: standardColors.white,
-    secondary: standardColors.blueLight,
+    secondary: standardColors.black,
     additional: standardColors.grayDark,
-    contrast: standardColors.black,
   },
   border: standardColors.gray,
 };

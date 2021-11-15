@@ -1,8 +1,9 @@
 import React from 'react';
-import { Col, Input, Row } from 'antd';
+import { Col, Input, Row, Typography } from 'antd';
 import { useUser } from 'hooks/useUser';
 import { baseDomain, schema } from 'constants/config/domains';
-import * as S from './ReferalsInfo.styles';
+
+const { Text } = Typography;
 
 export const ReferalsInfo = () => {
   const { id, ref_users } = useUser();
@@ -14,11 +15,11 @@ export const ReferalsInfo = () => {
       </Col>
 
       <Col span={24}>
-        <S.Text>Приглашай друзей и получай по 300 TikCoin за каждого + 20 👑</S.Text>
+        <Text>Приглашай друзей и получай по 300 TikCoin за каждого + 20 👑</Text>
       </Col>
 
       <Col span={24}>
-        <S.Text>Рефералов у вас: {ref_users.length}</S.Text>
+        <Text>Рефералов у вас: {ref_users.length}</Text>
       </Col>
     </Row>
   );

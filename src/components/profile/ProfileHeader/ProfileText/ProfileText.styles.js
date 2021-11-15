@@ -1,12 +1,11 @@
 import { Typography } from 'antd';
 import styled from 'styled-components';
+import { hexToRGB } from 'utils/utils';
 
 export const BalanceText = styled(Typography.Text)`
-  opacity: 0.7;
-
   font-size: ${(props) => props.theme.typography.size.xl};
 
-  color: ${(props) => props.theme.colors.text.main};
+  color: ${(props) => hexToRGB(props.theme.colors.text.main, 0.7)};
 
   @media only screen and ${(props) => props.theme.media.md} {
     font-size: ${(props) => props.theme.typography.size.xxl};
@@ -38,9 +37,7 @@ export const CurrencyText = styled(Typography.Text)`
 `;
 
 export const ExchangeText = styled(Typography.Text)`
-  opacity: 0.5;
-
-  color: ${(props) => props.theme.colors.text.main};
+  color: ${(props) => hexToRGB(props.theme.colors.text.main, 0.5)};
 
   @media only screen and ${(props) => props.theme.media.md} {
     font-size: ${(props) => props.theme.typography.size.xl};

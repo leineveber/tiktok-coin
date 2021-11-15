@@ -11,6 +11,13 @@ export const EnhancementCard = ({ name: title, description, icon, details, price
 
   const theme = useContext(ThemeContext);
 
+  // const backgrounds = [
+  //   theme.colors.background.autoClicker,
+  //   theme.colors.background.secondary,
+  //   theme.colors.background.vipSilver,
+  //   theme.colors.background.booster,
+  // ];
+
   const { isDesktop } = useResponsive();
 
   return (

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from './theme';
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -18,5 +19,9 @@ export const GlobalStyles = createGlobalStyle`
 
     .Icon {
         margin: 0 auto;
+    }
+
+    .ant-form-item-label > label {
+        color: ${theme.colors.text.additional};
     }
 `;

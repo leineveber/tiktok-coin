@@ -62,9 +62,8 @@ export const Title = styled(Typography.Text)`
 
 export const Description = styled(Typography.Text)`
   display: block;
-  opacity: 0.5;
 
-  color: ${(props) => props.theme.colors.text.main};
+  color: ${(props) => hexToRGB(props.theme.colors.text.main, 0.5)};
 
   @media only screen and ${(props) => props.theme.media.md} {
     font-size: ${(props) => props.theme.typography.size.xl};
@@ -73,22 +72,21 @@ export const Description = styled(Typography.Text)`
 
 export const Text = styled(Typography.Text)`
   display: block;
-  opacity: 0.4;
 
   font-size: ${(props) => props.theme.typography.size.xs};
 
   font-weight: ${(props) => props.theme.typography.weight.thin};
 
-  color: ${(props) => props.theme.colors.text.main};
+  color: ${(props) => hexToRGB(props.theme.colors.text.main, 0.4)};
 `;
 
 export const ImgWrapper = styled.div`
+  width: 3.5rem;
+  height: 3.5rem;
   position: absolute;
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
-  width: 3.5rem;
-  height: 3.5rem;
 
   @media only screen and ${(props) => props.theme.media.md} {
     width: 6rem;

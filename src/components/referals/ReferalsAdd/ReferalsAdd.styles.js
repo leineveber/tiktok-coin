@@ -24,14 +24,13 @@ export const Title = styled(Typography.Text)`
   display: block;
   line-height: 1;
 
-  color: ${(props) => props.theme.colors.text.contrast};
-
   font-weight: ${(props) => props.theme.typography.weight.semiBold};
 `;
 
 export const Description = styled(Typography.Text)`
-  opacity: 0.6;
   line-height: 1;
+
+  color: ${(props) => props.theme.colors.text.additional};
 
   font-weight: ${(props) => props.theme.typography.weight.medium};
 `;

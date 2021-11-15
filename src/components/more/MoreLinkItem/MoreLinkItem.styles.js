@@ -16,18 +16,14 @@ export const Title = styled(Typography.Text)`
   font-weight: ${(props) => props.theme.typography.weight.semiBold};
 
   font-size: ${(props) => props.theme.typography.size.lg};
-
-  color: ${(props) => props.theme.colors.text.contrast};
 `;
 
 export const Description = styled(Typography.Text)`
-  opacity: 0.6;
+  color: ${(props) => props.theme.colors.text.additional};
 
   font-weight: ${(props) => props.theme.typography.weight.medium};
 `;
 
 export const IconRight = styled(Icon16Chevron)`
-  color: ${(props) => props.theme.colors.text.contrast};
-
-  opacity: 0.3;
+  color: ${(props) => props.theme.colors.text.additional};
 `;
