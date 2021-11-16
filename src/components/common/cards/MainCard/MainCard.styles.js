@@ -83,10 +83,6 @@ export const Text = styled(Typography.Text)`
 export const ImgWrapper = styled.div`
   width: 3.5rem;
   height: 3.5rem;
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
 
   @media only screen and ${(props) => props.theme.media.md} {
     width: 6rem;
