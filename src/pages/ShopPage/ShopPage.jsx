@@ -13,7 +13,7 @@ export const ShopPage = () => {
   const { balance_crowns } = useUser();
 
   const enhancementCardsMemo = enhancement.map((card, index) => (
-    <Col key={card.title} span={24}>
+    <Col key={card.name} span={24}>
       <EnhancementCard
         index={index}
         name={card.name}
@@ -26,7 +26,7 @@ export const ShopPage = () => {
   ));
 
   const boostersCardsMemo = boosters.map((card, index) => (
-    <Col key={card.title} span={24}>
+    <Col key={card.name} span={24}>
       <EnhancementCard
         index={index}
         name={card.name}
