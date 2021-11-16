@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import { Col, Row } from 'antd';
 import { BonusCard } from 'components/profile/BonusCard/BonusCard';
 import { VoucherCard } from 'components/profile/VoucherCard/VoucherCard';
@@ -6,6 +6,7 @@ import { InstallCard } from 'components/profile/InstallCard/InstallCard';
 import { HelpCard } from 'components/profile/HelpCard/HelpCard';
 import { WatchCard } from 'components/profile/WatchCard/WatchCard';
 import { CustomCard } from 'components/common/cards/CustomCard/CustomCard';
+import { useCustomBanner } from 'hooks/useCustomBanner';
 
 const baseCards = [
   <BonusCard key={0} />,
@@ -15,23 +16,7 @@ const baseCards = [
 ];
 
 export const MainPage = () => {
-  const [customCard, setCustomCard] = useState({
-    visible: false,
-    title: '',
-    description: '',
-    text: '',
-    btnText: '',
-  });
-
-  useEffect(() => {
-    setCustomCard({
-      visible: true,
-      title: 'Кастомный баннер',
-      description: 'Описание',
-      text: 'До конца 1:23:45',
-      btnText: 'Текст 123',
-    });
-  }, []);
+  const customCard = useCustomBanner();
 
   const baseCardsMemo = useMemo(
     () =>
@@ -49,10 +34,6 @@ export const MainPage = () => {
         <WatchCard />
       </Col>
 
-      <Col span={24}>
-        <Row gutter={[10, 10]}>{baseCardsMemo}</Row>
-      </Col>
-
       {customCard.visible && (
         <Col span={24}>
           <CustomCard
@@ -63,6 +44,10 @@ export const MainPage = () => {
           />
         </Col>
       )}
+
+      <Col span={24}>
+        <Row gutter={[10, 10]}>{baseCardsMemo}</Row>
+      </Col>
     </Row>
   );
 };
