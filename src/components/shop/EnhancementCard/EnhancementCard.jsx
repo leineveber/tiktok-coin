@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from 'antd';
-import { MainCard } from 'components/common/cards/MainCard/MainCard';
 import { Drawer } from 'components/common/Drawer/Drawer';
+import { MainCard } from 'components/common/cards/MainCard/MainCard';
 import { useResponsive } from 'hooks/useResponsive';
 import { EnhancementMenu } from './EnhancementMenu/EnhancementMenu';
 
