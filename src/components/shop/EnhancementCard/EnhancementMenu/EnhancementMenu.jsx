@@ -26,6 +26,7 @@ export const EnhancementMenu = ({ title, details, prices }) => {
       onValuesChange={(values) => {
         setSelectedPrice(values.price);
       }}
+      layout="vertical"
     >
       <TitleItem title={title} />
 
