@@ -1,10 +1,9 @@
 export const useCustomBanner = () => {
   const customCard = {
-    visible: true,
     title: 'Кастомный баннер',
     description: 'Описание',
-    text: 'До конца 1:23:45',
     btnText: 'Текст 123',
+    end_date: 1637784000,
   };
 
   return customCard;
