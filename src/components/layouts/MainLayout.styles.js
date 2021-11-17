@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 export const MainLayout = styled(Layout)`
   background-color: ${(props) => props.theme.colors.main.primary};
 
-  @media only screen and (min-height: 600px) {
+  @media only screen and (min-height: 500px) {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }

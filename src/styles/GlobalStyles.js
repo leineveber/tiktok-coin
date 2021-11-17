@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        min-width: 360px;
+        min-width: 320px;
     }
 
     .Icon {
