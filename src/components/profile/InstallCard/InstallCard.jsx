@@ -14,10 +14,10 @@ export const InstallCard = () => {
 
   const { isDesktop } = useResponsive();
 
-  const { promptInstall, isInstallPromptSupported, isStandalone } = usePWA();
+  const { promptInstall, isInstallPromptSupported } = usePWA();
 
   const onClick = async () => {
-    if (isStandalone && isInstallPromptSupported) {
+    if (isInstallPromptSupported) {
       const didInstall = await promptInstall();
       if (didInstall) {
         console.log('installed');
