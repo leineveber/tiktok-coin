@@ -16,9 +16,13 @@ export const CustomCard = () => {
   const [difference, setDifference] = useState(0);
 
   useEffect(() => {
+    let cleanupFunc = false;
+
     setInterval(() => {
-      setDifference(Dates.unix(end_date).diff(Dates.getToday(), 's'));
+      !cleanupFunc && setDifference(Dates.unix(end_date).diff(Dates.getToday(), 's'));
     }, 1000);
+
+    return () => (cleanupFunc = true);
   }, [end_date]);
 
   return difference > 0 ? (

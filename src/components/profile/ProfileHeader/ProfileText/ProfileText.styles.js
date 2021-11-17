@@ -25,6 +25,10 @@ export const ValueText = styled(Typography.Text)`
 `;
 
 export const CurrencyText = styled(Typography.Text)`
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.2rem;
+
   font-size: ${(props) => props.theme.typography.size.lg};
 
   font-weight: ${(props) => props.theme.typography.weight.medium};
