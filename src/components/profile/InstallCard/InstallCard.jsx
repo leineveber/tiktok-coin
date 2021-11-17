@@ -37,7 +37,7 @@ export const InstallCard = () => {
       />
 
       {!isDesktop && (
-        <Drawer visible={isMenuVisible} setDrawerVisible={() => setMenuVisible(false)}>
+        <Drawer height={200} visible={isMenuVisible} setDrawerVisible={() => setMenuVisible(false)}>
           <InstallMenu />
         </Drawer>
       )}

@@ -81,8 +81,10 @@ export const Text = styled(Typography.Text)`
 `;
 
 export const ImgWrapper = styled.div`
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  color: ${(props) => props.theme.colors.text.main};
 
   @media only screen and ${(props) => props.theme.media.md} {
     width: 6rem;

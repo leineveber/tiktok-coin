@@ -8,7 +8,7 @@ export const WatchCard = () => {
   const theme = useContext(ThemeContext);
 
   return (
-    <a href={TIKTOK_LINK}>
+    <a href={TIKTOK_LINK} target="_blank" rel="noreferrer">
       <MainCard
         title="Смотреть TikTok"
         description="10-50 TikCoin за просмотр"
