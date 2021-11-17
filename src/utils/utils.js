@@ -5,3 +5,13 @@ export const hexToRGB = (hex, alpha) => {
 
   return alpha ? `rgba(${r}, ${g}, ${b}, ${alpha})` : `rgb(${r}, ${g}, ${b})`;
 };
+
+export const countdown = (s) => {
+  const h = Math.floor(s / (60 * 60));
+  s = s - h * 60 * 60;
+
+  const m = Math.floor(s / 60);
+  s = s - m * 60;
+
+  return `${h}:${m}:${s}`;
+};

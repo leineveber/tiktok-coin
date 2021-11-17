@@ -6,7 +6,6 @@ import { InstallCard } from 'components/profile/InstallCard/InstallCard';
 import { HelpCard } from 'components/profile/HelpCard/HelpCard';
 import { WatchCard } from 'components/profile/WatchCard/WatchCard';
 import { CustomCard } from 'components/common/cards/CustomCard/CustomCard';
-import { useCustomBanner } from 'hooks/useCustomBanner';
 
 const baseCards = [
   <BonusCard key={0} />,
@@ -16,8 +15,6 @@ const baseCards = [
 ];
 
 export const MainPage = () => {
-  const customCard = useCustomBanner();
-
   const baseCardsMemo = useMemo(
     () =>
       baseCards.map((Card, index) => (
@@ -34,16 +31,7 @@ export const MainPage = () => {
         <WatchCard />
       </Col>
 
-      {customCard.visible && (
-        <Col span={24}>
-          <CustomCard
-            title={customCard.title}
-            description={customCard.description}
-            text={customCard.text}
-            btnText={customCard.btnText}
-          />
-        </Col>
-      )}
+      <CustomCard />
 
       <Col span={24}>
         <Row gutter={[10, 10]}>{baseCardsMemo}</Row>
