@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { ThemeContext } from 'styled-components';
-import { MainCard } from 'components/common/cards/MainCard/MainCard';
 import { EXCHANGE_CROWNS_VALUE } from 'constants/config/exchangeValue';
 import crownsIcon from 'assets/images/crowns.png';
 import crownIcon from 'assets/icons/crown.png';
@@ -8,6 +7,7 @@ import { Image, Modal, Space } from 'antd';
 import { useResponsive } from 'hooks/useResponsive';
 import { Drawer } from 'components/common/Drawer/Drawer';
 import { BalanceMenu } from './BalanceMenu/BalanceMenu';
+import * as S from './BalanceCard.styles';
 
 export const BalanceCard = ({ balance }) => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -18,7 +18,7 @@ export const BalanceCard = ({ balance }) => {
 
   return (
     <>
-      <MainCard
+      <S.BalaneCard
         title={
           <>
             <Space align="center" size={4}>
@@ -41,7 +41,7 @@ export const BalanceCard = ({ balance }) => {
       />
 
       {!isDesktop && (
-        <Drawer visible={isMenuVisible} setDrawerVisible={() => setMenuVisible(false)}>
+        <Drawer height={300} visible={isMenuVisible} setDrawerVisible={() => setMenuVisible(false)}>
           <BalanceMenu />
         </Drawer>
       )}
