@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'antd';
+import { ReactComponent as TikTokIcon } from 'assets/icons/tiktok.svg';
 import * as S from './ProfileText.styles';
 
 export const ProfileText = ({ balanceValue, exchangeValue }) => (
@@ -9,7 +10,10 @@ export const ProfileText = ({ balanceValue, exchangeValue }) => (
     </Col>
 
     <Col span={24}>
-      <S.ValueText>{balanceValue}</S.ValueText> <S.CurrencyText>TikCoin</S.CurrencyText>
+      <S.ValueText>{balanceValue}</S.ValueText>{' '}
+      <S.CurrencyText>
+        TikCoin <TikTokIcon />
+      </S.CurrencyText>
     </Col>
 
     <Col span={24}>
