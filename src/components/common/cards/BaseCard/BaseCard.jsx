@@ -6,7 +6,7 @@ export const BaseCard = ({ title, icon, background, onClick }) => (
   <S.BaseCard background={background} onClick={onClick}>
     <Space direction="vertical" size={4}>
       <S.ImgWrapper>
-        <Image src={icon} alt="icon" preview={false} />
+        {typeof icon === 'string' ? <Image src={icon} alt="icon" preview={false} /> : icon}
       </S.ImgWrapper>
 
       <S.Title>{title}</S.Title>

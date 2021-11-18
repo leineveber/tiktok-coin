@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import { MainCard } from 'components/common/cards/MainCard/MainCard';
 import { hexToRGB } from 'utils/utils';
-import { Icon56GiftOutline } from '@vkontakte/icons';
+import bonus from 'assets/images/bonus.png';
 
 export const EveryDayCard = () => {
   const theme = useContext(ThemeContext);
@@ -17,7 +17,7 @@ export const EveryDayCard = () => {
           theme.colors.main.warning,
           0.8,
         )}, ${hexToRGB(theme.colors.main.error, 0.8)})`}
-        icon={<Icon56GiftOutline />}
+        icon={bonus}
       />
     </>
   );

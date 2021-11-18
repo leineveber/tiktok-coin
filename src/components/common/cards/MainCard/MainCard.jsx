@@ -44,7 +44,7 @@ export const MainCard = ({
 
       <Col>
         <S.ImgWrapper>
-          {typeof icon === 'string' ? <Image src={icon} alt="Icon" preview={false} /> : icon}
+          <Image src={icon} alt="Icon" preview={false} />
         </S.ImgWrapper>
       </Col>
     </Row>
