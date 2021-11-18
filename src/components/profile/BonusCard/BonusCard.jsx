@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { ThemeContext } from 'styled-components';
 import { Modal } from 'antd';
-import bonus from 'assets/images/bonus.png';
 import { useResponsive } from 'hooks/useResponsive';
 import { Drawer } from 'components/common/Drawer/Drawer';
 import { BaseCard } from '../../common/cards/BaseCard/BaseCard';
 import { BonusMenu } from './BonusMenu/BonusMenu';
+import { Icon56GiftOutline } from '@vkontakte/icons';
 
 export const BonusCard = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -18,7 +18,7 @@ export const BonusCard = () => {
     <>
       <BaseCard
         title="Доступные бонусы"
-        icon={bonus}
+        icon={<Icon56GiftOutline width={36} height={36} />}
         background={theme.colors.background.additional3}
         onClick={() => setMenuVisible(true)}
       />

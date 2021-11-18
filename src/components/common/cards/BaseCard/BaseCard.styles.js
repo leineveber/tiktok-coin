@@ -6,6 +6,8 @@ import { hexToRGB } from 'utils/utils';
 export const BaseCard = styled(Card)`
   height: 100%;
 
+  color: ${(props) => props.theme.colors.text.main};
+
   & .ant-card-body {
     height: 100%;
     position: relative;

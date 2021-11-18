@@ -23,7 +23,7 @@ export const EnhancementCard = ({ index, name: title, description, icon, details
 
       {!isDesktop && (
         <Drawer
-          height={title === 'VIP GOLD' ? 480 : 400}
+          height={title === 'VIP GOLD' ? 500 : title === 'Ускоритель X2' ? 350 : 400}
           visible={isMenuVisible}
           setDrawerVisible={() => setMenuVisible(false)}
         >
