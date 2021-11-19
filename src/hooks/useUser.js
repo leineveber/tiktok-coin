@@ -6,6 +6,10 @@ export const useUser = () => {
     gotBonusEveryday: false,
     gotBonusInstall: false,
     gotBonusTgChannelSub: false,
+    isAutoclickerActive: false,
+    isVipGold: false,
+    isVipSilver: false,
+    isBoostActive: false,
     id: 225395,
     ref_users: [
       {

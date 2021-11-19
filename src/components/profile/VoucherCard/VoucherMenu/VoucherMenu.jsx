@@ -2,19 +2,22 @@
 import React from 'react';
 import { notification, Form, Input } from 'antd';
 import { ModalTitle } from 'components/common/ModalTitle/ModalTitle';
+import { usePromo } from 'hooks/usePromo';
 import * as S from './VoucherMenu.styles';
 
 export const VoucherMenu = () => {
-  const onFinish = (values) => {
-    console.log(values);
+  const promo = usePromo();
 
-    notification.open({ message: 'Успешно применено!' }); // TODO handle in some other way
+  const onFinish = () => {
+    if (promo.isValid) {
+      notification.success({ message: 'Успешно применено!' }); // TODO dispatch user balance
+    } else {
+      notification.error({ message: 'Промокод недействителен!' });
+    }
   };
 
   const onFinishFailed = (error) => {
     console.error(error);
-
-    notification.open({ message: 'Промокод недействителен!' });
   };
 
   return (
@@ -23,7 +26,7 @@ export const VoucherMenu = () => {
         <ModalTitle>Активировать ваучер</ModalTitle>
       </Form.Item>
 
-      <Form.Item>
+      <Form.Item name="promo">
         <Input placeholder="Промо-код" />
       </Form.Item>
 
