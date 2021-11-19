@@ -9,12 +9,12 @@ export const EnhancementMenu = ({ title, details, prices }) => {
   const [selectedPrice, setSelectedPrice] = useState(prices.find((price) => price.default).price);
 
   const onFinish = (values) => {
-    notification.open({ message: 'Успешно куплено!' });
+    notification.success({ message: 'Успешно куплено!' });
     console.log(values);
   };
 
   const onFinishFailed = (error) => {
-    notification.open({ message: `Произошла ошибка: ${error}` });
+    notification.error({ message: `Произошла ошибка: ${error}` });
   };
 
   return (

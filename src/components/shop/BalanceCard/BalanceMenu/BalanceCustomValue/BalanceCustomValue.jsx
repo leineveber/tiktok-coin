@@ -7,7 +7,7 @@ import * as S from './BalanceCustomValue.styles';
 
 export const BalanceCustomValue = () => {
   const onFinish = () => {
-    notification.open({ message: 'Успешно пополнено!' });
+    notification.success({ message: 'Успешно пополнено!' });
   };
 
   return (

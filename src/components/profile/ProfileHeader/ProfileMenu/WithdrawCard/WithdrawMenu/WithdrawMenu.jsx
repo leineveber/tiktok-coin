@@ -11,7 +11,7 @@ export const WithdrawMenu = () => {
   const onFinish = (values) => {
     console.log(values); // TODO Handle in other way
 
-    notification.open({ message: 'Успешно выведено!' });
+    notification.success({ message: 'Успешно выведено!' });
   };
 
   const onFinishFailed = (error) => {
