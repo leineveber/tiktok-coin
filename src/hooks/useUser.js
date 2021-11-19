@@ -7,8 +7,6 @@ export const useUser = () => {
     gotBonusInstall: false,
     gotBonusTgChannelSub: false,
     id: 225395,
-    photo_200: '',
-    profit_to_ref_parent: 0,
     ref_users: [
       {
         name: 'Егор Лапкин',
